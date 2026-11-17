@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Trắc nghiệm Hệ điều hành</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#f4f6fa;color:#18212f;font:16px/1.5 system-ui,sans-serif}.wrap{max-width:720px;margin:32px auto;padding:20px}.card{background:white;border:1px solid #e2e7ef;border-radius:16px;padding:24px;box-shadow:0 8px 30px #18212f0b}h1{font-size:1.45rem;margin:0 0 18px}select,button{font:inherit}select{width:100%;padding:11px;border:1px solid #cbd3df;border-radius:9px;background:white;margin:0 0 18px}.meta{color:#5e6a7d;font-size:.9rem;margin-bottom:8px}.q{font-size:1.12rem;font-weight:650;margin:8px 0 18px}.answers{display:grid;gap:10px}.answers button{width:100%;text-align:left;padding:12px 14px;border:1px solid #cbd3df;border-radius:10px;background:#fff;cursor:pointer;color:#18212f}.answers button:hover:not(:disabled){border-color:#5668e8;background:#f7f8ff}.answers button:disabled{cursor:default}.answers .good{background:#e8f7ee;border-color:#2b9a58}.answers .bad{background:#fff0ef;border-color:#d64b44}.feedback{padding:12px;border-radius:10px;margin-top:14px}.feedback.good{background:#e8f7ee;color:#176536}.feedback.bad{background:#fff0ef;color:#9d2f2a}.next{margin-top:14px;padding:10px 16px;border:0;border-radius:9px;background:#3547cc;color:#fff;cursor:pointer}.hidden{display:none}.wrong{padding-left:20px}.wrong li{margin:12px 0}.small{color:#5e6a7d}@media(max-width:520px){.wrap{margin:10px auto;padding:12px}.card{padding:18px}h1{font-size:1.25rem}}
+  </style>
+</head>
+<body>
+  <main class="wrap"><section class="card">
+    <h1>Trắc nghiệm Hệ điều hành</h1>
+    <label for="chapter">Chọn bộ đề</label>
+    <select id="chapter"><option value="all">Trộn cả 4 chương</option><option value="1">Chương 1</option><option value="2">Chương 2</option><option value="3">Chương 3</option><option value="4">Chương 4</option></select>
+    <div id="quiz"><div id="meta" class="meta"></div><div id="question" class="q"></div><div id="answers" class="answers"></div><div id="feedback" class="hidden"></div><button id="next" class="next hidden">Câu tiếp theo</button></div>
+    <div id="result" class="hidden"></div>
+  </section></main>
+  <script src="questions.js"></script>
+  <script>
+    const $=id=>document.getElementById(id), labels=['A','B','C','D'];
+    let pool=[],pos=0,wrong=[],retry=false,answered=false;
+    // Xáo mảng Fisher–Yates.
+    function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+    function start(list,isRetry=false){pool=shuffle(list);pos=0;wrong=[];retry=isRetry;$('result').classList.add('hidden');$('quiz').classList.remove('hidden');show()}
+    function show(){answered=false;$('feedback').className='hidden';$('next').classList.add('hidden');const item=pool[pos];$('meta').textContent=`${retry?'Làm lại câu sai · ':''}Câu ${pos+1}/${pool.length} · Chương ${item.chapter}`;$('question').textContent=item.q;const opts=item.a.map((text,index)=>({text,correct:index===item.correct}));const display=retry?shuffle(opts):opts;$('answers').replaceChildren(...display.map((o,i)=>{const b=document.createElement('button');b.textContent=`${labels[i]}. ${o.text}`;b.onclick=()=>choose(o,b);return b}))}
+    function choose(option,button){if(answered)return;answered=true;const item=pool[pos];for(const b of $('answers').children)b.disabled=true;if(option.correct){button.classList.add('good');$('feedback').className='feedback good';$('feedback').textContent=`Chính xác. ${item.why}`}else{button.classList.add('bad');wrong.push(item);$('feedback').className='feedback bad';$('feedback').textContent=`Chưa đúng. Đáp án: ${item.a[item.correct]}. ${item.why}`} $('next').textContent=pos===pool.length-1?'Xem kết quả':'Câu tiếp theo';$('next').classList.remove('hidden')}
+    function finish(){ $('quiz').classList.add('hidden');$('result').classList.remove('hidden');const score=pool.length-wrong.length;let html=`<h2>Điểm: ${score}/${pool.length}</h2>`;if(wrong.length){html+='<p>Câu trả lời sai:</p><ol class="wrong">'+wrong.map(x=>`<li><b>${x.q}</b><br>Đáp án đúng: ${x.a[x.correct]}<br><span class="small">${x.why}</span></li>`).join('')+'</ol><button id="retry" class="next">Làm lại câu sai ('+wrong.length+')</button>'}else html+='<p>Bạn đã đúng hết bộ đề.</p>';html+='<br><button id="restart" class="next">Làm lại bộ đề</button>'; $('result').innerHTML=html;const previous=pool.slice();if(wrong.length)$('retry').onclick=()=>start(wrong,true);$('restart').onclick=()=>start(previous)}
+    $('next').onclick=()=>{if(pos<pool.length-1){pos++;show()}else finish()};$('chapter').onchange=()=>{const v=$('chapter').value;start(QUESTIONS.filter(q=>v==='all'||q.chapter===Number(v)))};start(QUESTIONS);
+  </script>
+</body>
+</html>
