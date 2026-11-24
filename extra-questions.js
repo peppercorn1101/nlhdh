@@ -12,7 +12,7 @@ window.EXTRA_QUESTIONS = [
       "Đưa toàn bộ ứng dụng văn phòng vào kernel"
     ],
     "correct": 2,
-    "why": "Microkernel giữ nhân nhỏ, dịch vụ chuyển ra user space.; Ưu: dễ bảo trì/cô lập lỗi; nhược: tăng chi phí IPC. Chưa đối chiếu được với bài học scan.",
+    "why": "Microkernel giữ nhân nhỏ, dịch vụ chuyển ra user space.; Ưu: dễ bảo trì/cô lập lỗi; nhược: tăng chi phí IPC.",
     "ref": "Trang 1",
     "labels": [
       "A",
@@ -33,7 +33,7 @@ window.EXTRA_QUESTIONS = [
       "Luôn nhanh hơn mọi kernel khác trong mọi trường hợp"
     ],
     "correct": 1,
-    "why": "Ý chính: Dễ mở rộng, dễ bảo trì và tăng tính cô lập lỗi.; API là giao diện lập trình thuận tiện; system call yêu cầu dịch vụ từ kernel. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Dễ mở rộng, dễ bảo trì và tăng tính cô lập lỗi.; API là giao diện lập trình thuận tiện; system call yêu cầu dịch vụ từ kernel.",
     "ref": "Trang 1",
     "labels": [
       "A",
@@ -54,7 +54,7 @@ window.EXTRA_QUESTIONS = [
       "Nhiều reader có thể đọc đồng thời, nhưng writer cần quyền truy cập độc quyền"
     ],
     "correct": 3,
-    "why": "Readers-Writers: nhiều reader có thể cùng đọc, writer phải độc quyền.; Thiết kế ưu tiên reader/writer không hợp lý có thể gây starvation. Chưa đối chiếu được với bài học scan.",
+    "why": "Readers-Writers: nhiều reader có thể cùng đọc, writer phải độc quyền.; Thiết kế ưu tiên reader/writer không hợp lý có thể gây starvation.",
     "ref": "Trang 1",
     "labels": [
       "A",
@@ -75,7 +75,7 @@ window.EXTRA_QUESTIONS = [
       "Phải đáp ứng đúng hạn chặt chẽ"
     ],
     "correct": 3,
-    "why": "Hard real-time: trễ deadline có thể là lỗi hệ thống nghiêm trọng.; Soft real-time: trễ deadline làm giảm chất lượng nhưng không nhất thiết thất bại. Chưa đối chiếu được với bài học scan.",
+    "why": "Hard real-time: trễ deadline có thể là lỗi hệ thống nghiêm trọng.; Soft real-time: trễ deadline làm giảm chất lượng nhưng không nhất thiết thất bại.",
     "ref": "Trang 1",
     "labels": [
       "A",
@@ -96,7 +96,7 @@ window.EXTRA_QUESTIONS = [
       "Tiến trình chờ I/O hoặc chờ một sự kiện"
     ],
     "correct": 3,
-    "why": "Ý chính: Tiến trình chờ I/O hoặc chờ một sự kiện.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Tiến trình chờ I/O hoặc chờ một sự kiện.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con.",
     "ref": "Trang 1",
     "labels": [
       "A",
@@ -117,7 +117,7 @@ window.EXTRA_QUESTIONS = [
       "Công việc có thời hạn xa nhất"
     ],
     "correct": 0,
-    "why": "EDF = Earliest Deadline First: deadline gần nhất được ưu tiên.; Hard real-time yêu cầu đáp ứng hạn chót nghiêm ngặt. Chưa đối chiếu được với bài học scan.",
+    "why": "EDF = Earliest Deadline First: deadline gần nhất được ưu tiên.; Hard real-time yêu cầu đáp ứng hạn chót nghiêm ngặt.",
     "ref": "Trang 1",
     "labels": [
       "A",
@@ -138,7 +138,7 @@ window.EXTRA_QUESTIONS = [
       "open() và close()"
     ],
     "correct": 2,
-    "why": "Ý chính: wait() và signal().; Critical section: đoạn mã truy cập dữ liệu chung; race condition do thứ tự thực thi xen kẽ. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: wait() và signal().; Critical section: đoạn mã truy cập dữ liệu chung; race condition do thứ tự thực thi xen kẽ.",
     "ref": "Trang 2",
     "labels": [
       "A",
@@ -159,7 +159,7 @@ window.EXTRA_QUESTIONS = [
       "Nếu miền tương trục đang rỗng và có tiến trình muốn vào, việc lựa chọn không bị trì hoãn vô hạn"
     ],
     "correct": 3,
-    "why": "Ý chính: Nếu miền tương trục đang rỗng và có tiến trình muốn vào, việc lựa chọn không bị trì hoãn vô hạn.; Semaphore: wait()/signal(); mutex bảo vệ vùng tới hạn; busy waiting tiêu tốn CPU. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Nếu miền tương trục đang rỗng và có tiến trình muốn vào, việc lựa chọn không bị trì hoãn vô hạn.; Semaphore: wait()/signal(); mutex bảo vệ vùng tới hạn; busy waiting tiêu tốn CPU.",
     "ref": "Trang 2",
     "labels": [
       "A",
@@ -180,7 +180,7 @@ window.EXTRA_QUESTIONS = [
       "Tạo, xóa, đọc, ghi và tổ chức tập tin/thư mục"
     ],
     "correct": 3,
-    "why": "Ý chính: Tạo, xóa, đọc, ghi và tổ chức tập tin/thư mục.; OS quản lý CPU, bộ nhớ, I/O, tệp và cung cấp môi trường chạy chương trình. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Tạo, xóa, đọc, ghi và tổ chức tập tin/thư mục.; OS quản lý CPU, bộ nhớ, I/O, tệp và cung cấp môi trường chạy chương trình.",
     "ref": "Trang 2",
     "labels": [
       "A",
@@ -201,7 +201,7 @@ window.EXTRA_QUESTIONS = [
       "Luôn cần màn hình cảm ứng"
     ],
     "correct": 0,
-    "why": "Ý chính: Người dùng nhập lệnh dạng văn bản để yêu cầu hệ thống thực hiện công việc.; Monolithic: nhiều dịch vụ trong kernel; microkernel: chuyển nhiều dịch vụ sang user space. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Người dùng nhập lệnh dạng văn bản để yêu cầu hệ thống thực hiện công việc.; Monolithic: nhiều dịch vụ trong kernel; microkernel: chuyển nhiều dịch vụ sang user space.",
     "ref": "Trang 2",
     "labels": [
       "A",
@@ -222,7 +222,7 @@ window.EXTRA_QUESTIONS = [
       "Burst time trừ thời điểm đến"
     ],
     "correct": 0,
-    "why": "Turnaround time = completion time − arrival time.; Waiting time = turnaround − tổng CPU burst (trong bài toán chỉ có CPU burst). Chưa đối chiếu được với bài học scan.",
+    "why": "Turnaround time = completion time − arrival time.; Waiting time = turnaround − tổng CPU burst (trong bài toán chỉ có CPU burst).",
     "ref": "Trang 3",
     "labels": [
       "A",
@@ -243,7 +243,7 @@ window.EXTRA_QUESTIONS = [
       "Thao tác tắt màn hình"
     ],
     "correct": 2,
-    "why": "Test-and-Set là thao tác nguyên tử đọc giá trị cũ và đặt giá trị mới.; Dùng xây dựng spinlock; có thể gây busy waiting. Chưa đối chiếu được với bài học scan.",
+    "why": "Test-and-Set là thao tác nguyên tử đọc giá trị cũ và đặt giá trị mới.; Dùng xây dựng spinlock; có thể gây busy waiting.",
     "ref": "Trang 3",
     "labels": [
       "A",
@@ -264,7 +264,7 @@ window.EXTRA_QUESTIONS = [
       "Tổng thời gian tiến trình chờ trong hàng đợi sẵn sàng"
     ],
     "correct": 3,
-    "why": "Ý chính: Tổng thời gian tiến trình chờ trong hàng đợi sẵn sàng.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Tổng thời gian tiến trình chờ trong hàng đợi sẵn sàng.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất.",
     "ref": "Trang 3",
     "labels": [
       "A",
@@ -285,7 +285,7 @@ window.EXTRA_QUESTIONS = [
       "Chỉ dùng để lưu mật khẩu"
     ],
     "correct": 1,
-    "why": "Ý chính: Giúp hệ điều hành giao tiếp và điều khiển thiết bị phần cứng.; API là giao diện lập trình thuận tiện; system call yêu cầu dịch vụ từ kernel. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Giúp hệ điều hành giao tiếp và điều khiển thiết bị phần cứng.; API là giao diện lập trình thuận tiện; system call yêu cầu dịch vụ từ kernel.",
     "ref": "Trang 3",
     "labels": [
       "A",
@@ -306,7 +306,7 @@ window.EXTRA_QUESTIONS = [
       "Tắt màn hình"
     ],
     "correct": 2,
-    "why": "Ý chính: System call.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: System call.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành.",
     "ref": "Trang 3",
     "labels": [
       "A",
@@ -327,7 +327,7 @@ window.EXTRA_QUESTIONS = [
       "Xóa tiến trình khỏi hàng đợi"
     ],
     "correct": 1,
-    "why": "Counting semaphore dùng để quản lý số lượng hữu hạn tài nguyên giống nhau.; Binary semaphore chỉ có 0/1; semaphore cần thao tác nguyên tử. Chưa đối chiếu được với bài học scan.",
+    "why": "Counting semaphore dùng để quản lý số lượng hữu hạn tài nguyên giống nhau.; Binary semaphore chỉ có 0/1; semaphore cần thao tác nguyên tử.",
     "ref": "Trang 4",
     "labels": [
       "A",
@@ -348,7 +348,7 @@ window.EXTRA_QUESTIONS = [
       "Tập tin và thư mục"
     ],
     "correct": 1,
-    "why": "Ý chính: Người dùng/chương trình ứ.; Kernel là phần lõi; user mode bị giới hạn, kernel mode thực thi lệnh đặc quyền. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Người dùng/chương trình ứ.; Kernel là phần lõi; user mode bị giới hạn, kernel mode thực thi lệnh đặc quyền.",
     "ref": "Trang 4",
     "labels": [
       "A",
@@ -369,7 +369,7 @@ window.EXTRA_QUESTIONS = [
       "Xóa hàng đợi sẵn sàng"
     ],
     "correct": 0,
-    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu. Chưa đối chiếu được với bài học scan.",
+    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu.",
     "ref": "Trang 4",
     "labels": [
       "A",
@@ -390,7 +390,7 @@ window.EXTRA_QUESTIONS = [
       "Không cần hệ điều hành quản lý"
     ],
     "correct": 1,
-    "why": "Đa luồng cải thiện responsiveness và khả năng tận dụng CPU đa lõi.; Các luồng chia sẻ dữ liệu nên vẫn cần đồng bộ. Chưa đối chiếu được với bài học scan.",
+    "why": "Đa luồng cải thiện responsiveness và khả năng tận dụng CPU đa lõi.; Các luồng chia sẻ dữ liệu nên vẫn cần đồng bộ.",
     "ref": "Trang 4",
     "labels": [
       "A",
@@ -411,7 +411,7 @@ window.EXTRA_QUESTIONS = [
       "Bộ nhớ ROM"
     ],
     "correct": 2,
-    "why": "Ý chính: Hàng đợi sẵn sàng.; RR chia thời gian theo quantum; quantum quá nhỏ tăng context switch. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Hàng đợi sẵn sàng.; RR chia thời gian theo quantum; quantum quá nhỏ tăng context switch.",
     "ref": "Trang 4",
     "labels": [
       "A",
@@ -432,7 +432,7 @@ window.EXTRA_QUESTIONS = [
       "Tất cả tiến trình phải cùng vào miền tương trục"
     ],
     "correct": 1,
-    "why": "Ý chính: Tại một thời điểm, chỉ một tiến trình được vào miền tương trục.; Ba yêu cầu: mutual exclusion, progress, bounded waiting. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Tại một thời điểm, chỉ một tiến trình được vào miền tương trục.; Ba yêu cầu: mutual exclusion, progress, bounded waiting.",
     "ref": "Trang 4",
     "labels": [
       "A",
@@ -453,7 +453,7 @@ window.EXTRA_QUESTIONS = [
       "Không cần bộ nhớ chính"
     ],
     "correct": 1,
-    "why": "Ý chính: Cho phép nhiều tiến trình/chương trình cùng được quản lý và chia sẻ CPU.; Kernel là phần lõi; user mode bị giới hạn, kernel mode thực thi lệnh đặc quyền. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Cho phép nhiều tiến trình/chương trình cùng được quản lý và chia sẻ CPU.; Kernel là phần lõi; user mode bị giới hạn, kernel mode thực thi lệnh đặc quyền.",
     "ref": "Trang 5",
     "labels": [
       "A",
@@ -474,7 +474,7 @@ window.EXTRA_QUESTIONS = [
       "Chỉ dùng để soạn thảo văn bản"
     ],
     "correct": 1,
-    "why": "Ý chính: Quản lý tài nguyên phần cứng và cung cấp môi trường thực thi cho chương trình.; OS quản lý CPU, bộ nhớ, I/O, tệp và cung cấp môi trường chạy chương trình. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Quản lý tài nguyên phần cứng và cung cấp môi trường thực thi cho chương trình.; OS quản lý CPU, bộ nhớ, I/O, tệp và cung cấp môi trường chạy chương trình.",
     "ref": "Trang 5",
     "labels": [
       "A",
@@ -495,7 +495,7 @@ window.EXTRA_QUESTIONS = [
       "Điều chỉnh độ sáng màn hình"
     ],
     "correct": 0,
-    "why": "Ý chính: Mở, đọc, ghi, đóng và xóa tập tin.; Monolithic: nhiều dịch vụ trong kernel; microkernel: chuyển nhiều dịch vụ sang user space. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Mở, đọc, ghi, đóng và xóa tập tin.; Monolithic: nhiều dịch vụ trong kernel; microkernel: chuyển nhiều dịch vụ sang user space.",
     "ref": "Trang 5",
     "labels": [
       "A",
@@ -516,7 +516,7 @@ window.EXTRA_QUESTIONS = [
       "Quản lý tập tin ảnh"
     ],
     "correct": 0,
-    "why": "Peterson: thuật toán phần mềm cổ điển cho hai tiến trình.; Dùng flag[] và turn; có busy waiting. Chưa đối chiếu được với bài học scan.",
+    "why": "Peterson: thuật toán phần mềm cổ điển cho hai tiến trình.; Dùng flag[] và turn; có busy waiting.",
     "ref": "Trang 5",
     "labels": [
       "A",
@@ -537,7 +537,7 @@ window.EXTRA_QUESTIONS = [
       "Tiến trình vào ngẫu nhiên không kiểm soát"
     ],
     "correct": 1,
-    "why": "Bakery Algorithm cấp số thứ tự (ticket) để quyết định lượt vào vùng tới hạn.; Nếu số bằng nhau, dùng PID để phân xử; là giải pháp phần mềm loại trừ tương hỗ. Chưa đối chiếu được với bài học scan.",
+    "why": "Bakery Algorithm cấp số thứ tự (ticket) để quyết định lượt vào vùng tới hạn.; Nếu số bằng nhau, dùng PID để phân xử; là giải pháp phần mềm loại trừ tương hỗ.",
     "ref": "Trang 6",
     "labels": [
       "A",
@@ -558,7 +558,7 @@ window.EXTRA_QUESTIONS = [
       "Không có hàng đợi sẵn sàng"
     ],
     "correct": 0,
-    "why": "SJF/SRTF khó biết trước CPU burst; có thể dự đoán bằng exponential averaging.; SJF không trưng dụng; SRTF có trưng dụng và có thể gây starvation. Chưa đối chiếu được với bài học scan.",
+    "why": "SJF/SRTF khó biết trước CPU burst; có thể dự đoán bằng exponential averaging.; SJF không trưng dụng; SRTF có trưng dụng và có thể gây starvation.",
     "ref": "Trang 6",
     "labels": [
       "A",
@@ -579,7 +579,7 @@ window.EXTRA_QUESTIONS = [
       "Đổi tên máy tính"
     ],
     "correct": 0,
-    "why": "Ý chính: Tạo một tiến trình con từ tiến trình hiện tại.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Tạo một tiến trình con từ tiến trình hiện tại.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con.",
     "ref": "Trang 6",
     "labels": [
       "A",
@@ -600,7 +600,7 @@ window.EXTRA_QUESTIONS = [
       "Một lệnh tắt máy"
     ],
     "correct": 0,
-    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu. Chưa đối chiếu được với bài học scan.",
+    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu.",
     "ref": "Trang 6",
     "labels": [
       "A",
@@ -621,7 +621,7 @@ window.EXTRA_QUESTIONS = [
       "Ưu tiên thấp nhất trước"
     ],
     "correct": 1,
-    "why": "Ý chính: Đến trước phục vụ trước.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Đến trước phục vụ trước.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất.",
     "ref": "Trang 6",
     "labels": [
       "A",
@@ -642,7 +642,7 @@ window.EXTRA_QUESTIONS = [
       "Làm chương trình không cần bộ nhớ"
     ],
     "correct": 0,
-    "why": "Context switch lưu/phục hồi trạng thái tiến trình, tạo overhead.; Chuyển ngữ cảnh quá thường xuyên làm giảm thời gian CPU xử lý công việc hữu ích. Chưa đối chiếu được với bài học scan.",
+    "why": "Context switch lưu/phục hồi trạng thái tiến trình, tạo overhead.; Chuyển ngữ cảnh quá thường xuyên làm giảm thời gian CPU xử lý công việc hữu ích.",
     "ref": "Trang 7",
     "labels": [
       "A",
@@ -663,7 +663,7 @@ window.EXTRA_QUESTIONS = [
       "Đơn vị thực thi nhẹ bên trong một tiến trình"
     ],
     "correct": 3,
-    "why": "Thread là đơn vị thực thi trong process; chia sẻ không gian địa chỉ.; Mỗi thread có stack, thanh ghi và bộ đếm chương trình riêng. Chưa đối chiếu được với bài học scan.",
+    "why": "Thread là đơn vị thực thi trong process; chia sẻ không gian địa chỉ.; Mỗi thread có stack, thanh ghi và bộ đếm chương trình riêng.",
     "ref": "Trang 7",
     "labels": [
       "A",
@@ -684,7 +684,7 @@ window.EXTRA_QUESTIONS = [
       "Chỉ cho phép chạy trò chơi"
     ],
     "correct": 1,
-    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu. Chưa đối chiếu được với bài học scan.",
+    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu.",
     "ref": "Trang 7",
     "labels": [
       "A",
@@ -705,7 +705,7 @@ window.EXTRA_QUESTIONS = [
       "Dữ liệu sai lệch hoặc không nhất quán"
     ],
     "correct": 3,
-    "why": "Ý chính: Dữ liệu sai lệch hoặc không nhất quán.; Semaphore: wait()/signal(); mutex bảo vệ vùng tới hạn; busy waiting tiêu tốn CPU. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Dữ liệu sai lệch hoặc không nhất quán.; Semaphore: wait()/signal(); mutex bảo vệ vùng tới hạn; busy waiting tiêu tốn CPU.",
     "ref": "Trang 7",
     "labels": [
       "A",
@@ -726,7 +726,7 @@ window.EXTRA_QUESTIONS = [
       "Các dây cáp kết nối phần cứng"
     ],
     "correct": 2,
-    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu. Chưa đối chiếu được với bài học scan.",
+    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu.",
     "ref": "Trang 7",
     "labels": [
       "A",
@@ -747,7 +747,7 @@ window.EXTRA_QUESTIONS = [
       "Một tiến trình chờ quá lâu vì liên tục không được chọn"
     ],
     "correct": 3,
-    "why": "Starvation là tiến trình chờ rất lâu vì liên tục không được chọn.; Aging tăng dần độ ưu tiên của tiến trình chờ lâu. Chưa đối chiếu được với bài học scan.",
+    "why": "Starvation là tiến trình chờ rất lâu vì liên tục không được chọn.; Aging tăng dần độ ưu tiên của tiến trình chờ lâu.",
     "ref": "Trang 8",
     "labels": [
       "A",
@@ -768,7 +768,7 @@ window.EXTRA_QUESTIONS = [
       "format() và delete()"
     ],
     "correct": 0,
-    "why": "Semaphore không chờ bận dùng block() để ngủ và wakeup() để đánh thức.; Khác spinlock: spinlock lặp kiểm tra khóa và tiêu thụ CPU. Chưa đối chiếu được với bài học scan.",
+    "why": "Semaphore không chờ bận dùng block() để ngủ và wakeup() để đánh thức.; Khác spinlock: spinlock lặp kiểm tra khóa và tiêu thụ CPU.",
     "ref": "Trang 8",
     "labels": [
       "A",
@@ -789,7 +789,7 @@ window.EXTRA_QUESTIONS = [
       "Chơi game tương tác thời gian thực"
     ],
     "correct": 1,
-    "why": "Ý chính: Xử lý các công việc theo lô, ít tương tác trực tiếp với người dùng.; Kernel là phần lõi; user mode bị giới hạn, kernel mode thực thi lệnh đặc quyền. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Xử lý các công việc theo lô, ít tương tác trực tiếp với người dùng.; Kernel là phần lõi; user mode bị giới hạn, kernel mode thực thi lệnh đặc quyền.",
     "ref": "Trang 8",
     "labels": [
       "A",
@@ -810,7 +810,7 @@ window.EXTRA_QUESTIONS = [
       "CPU không cần định thời"
     ],
     "correct": 2,
-    "why": "Quantum quá nhỏ làm tăng context switch và overhead.; Quantum quá lớn làm RR gần FCFS. Chưa đối chiếu được với bài học scan.",
+    "why": "Quantum quá nhỏ làm tăng context switch và overhead.; Quantum quá lớn làm RR gần FCFS.",
     "ref": "Trang 8",
     "labels": [
       "A",
@@ -831,7 +831,7 @@ window.EXTRA_QUESTIONS = [
       "Hệ không có tiến trình"
     ],
     "correct": 0,
-    "why": "Round Robin thích hợp hệ tương tác/time-sharing vì luân phiên cấp CPU.; Quantum ảnh hưởng độ đáp ứng và chi phí chuyển ngữ cảnh. Chưa đối chiếu được với bài học scan.",
+    "why": "Round Robin thích hợp hệ tương tác/time-sharing vì luân phiên cấp CPU.; Quantum ảnh hưởng độ đáp ứng và chi phí chuyển ngữ cảnh.",
     "ref": "Trang 8",
     "labels": [
       "A",
@@ -852,7 +852,7 @@ window.EXTRA_QUESTIONS = [
       "Làm hệ điều hành mất khả năng mở rộng"
     ],
     "correct": 1,
-    "why": "Ý chính: Cho phép nạp/gỡ một số chức năng kernel linh hoạt khi cần.; OS services gồm thực thi chương trình, I/O, quản lý tệp, truyền thông, bảo vệ. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Cho phép nạp/gỡ một số chức năng kernel linh hoạt khi cần.; OS services gồm thực thi chương trình, I/O, quản lý tệp, truyền thông, bảo vệ.",
     "ref": "Trang 9",
     "labels": [
       "A",
@@ -873,7 +873,7 @@ window.EXTRA_QUESTIONS = [
       "Làm mọi tiến trình kết thúc ngay"
     ],
     "correct": 0,
-    "why": "Processor affinity giữ tiến trình trên lõi quen thuộc để tận dụng cache.; Load balancing phân bố tải giữa các lõi, đôi khi cần di chuyển tiến trình. Chưa đối chiếu được với bài học scan.",
+    "why": "Processor affinity giữ tiến trình trên lõi quen thuộc để tận dụng cache.; Load balancing phân bố tải giữa các lõi, đôi khi cần di chuyển tiến trình.",
     "ref": "Trang 9",
     "labels": [
       "A",
@@ -894,7 +894,7 @@ window.EXTRA_QUESTIONS = [
       "Để xóa bỏ hoàn toàn quyền truy cập bộ nhớ"
     ],
     "correct": 0,
-    "why": "Ý chính: Để bảo vệ hệ thống, ngăn chương trình người dùng truy cập trực tiếp tài nguyên nhạy cảm.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Để bảo vệ hệ thống, ngăn chương trình người dùng truy cập trực tiếp tài nguyên nhạy cảm.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành.",
     "ref": "Trang 9",
     "labels": [
       "A",
@@ -915,7 +915,7 @@ window.EXTRA_QUESTIONS = [
       "Cấp phát, thu hồi, bảo vệ và tổ chức bộ nhớ cho các tiến trình"
     ],
     "correct": 3,
-    "why": "Ý chính: Cấp phát, thu hồi, bảo vệ và tổ chức bộ nhớ cho các tiến trình.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Cấp phát, thu hồi, bảo vệ và tổ chức bộ nhớ cho các tiến trình.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành.",
     "ref": "Trang 9",
     "labels": [
       "A",
@@ -936,7 +936,7 @@ window.EXTRA_QUESTIONS = [
       "FCFS luôn tốt nhất trong mọi trường hợp"
     ],
     "correct": 2,
-    "why": "Ý chính: Không có thuật toán tối ưu cho mọi mục tiêu và mọi hệ thống.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Không có thuật toán tối ưu cho mọi mục tiêu và mọi hệ thống.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất.",
     "ref": "Trang 9",
     "labels": [
       "A",
@@ -957,7 +957,7 @@ window.EXTRA_QUESTIONS = [
       "Tạo bản sao ổ cứng"
     ],
     "correct": 2,
-    "why": "exec() thay thế ảnh chương trình trong tiến trình hiện tại, không tạo PID mới.; fork() tạo tiến trình con; wait() chờ con kết thúc. Chưa đối chiếu được với bài học scan.",
+    "why": "exec() thay thế ảnh chương trình trong tiến trình hiện tại, không tạo PID mới.; fork() tạo tiến trình con; wait() chờ con kết thúc.",
     "ref": "Trang 10",
     "labels": [
       "A",
@@ -978,7 +978,7 @@ window.EXTRA_QUESTIONS = [
       "Chỉ có một triết gia trong hệ thống"
     ],
     "correct": 2,
-    "why": "Dining Philosophers: mỗi người giữ một đũa và chờ đũa kia → circular wait.; Điều kiện deadlock: mutual exclusion, hold-and-wait, no preemption, circular wait. Chưa đối chiếu được với bài học scan.",
+    "why": "Dining Philosophers: mỗi người giữ một đũa và chờ đũa kia → circular wait.; Điều kiện deadlock: mutual exclusion, hold-and-wait, no preemption, circular wait.",
     "ref": "Trang 10",
     "labels": [
       "A",
@@ -999,7 +999,7 @@ window.EXTRA_QUESTIONS = [
       "Tiến trình dùng nhiều bộ nhớ nhất"
     ],
     "correct": 1,
-    "why": "SJF không trưng dụng chọn tiến trình ready có CPU burst ngắn nhất.; SRTF là phiên bản có trưng dụng dựa vào thời gian còn lại. Chưa đối chiếu được với bài học scan.",
+    "why": "SJF không trưng dụng chọn tiến trình ready có CPU burst ngắn nhất.; SRTF là phiên bản có trưng dụng dựa vào thời gian còn lại.",
     "ref": "Trang 10",
     "labels": [
       "A",
@@ -1020,7 +1020,7 @@ window.EXTRA_QUESTIONS = [
       "Luôn bằng 100"
     ],
     "correct": 1,
-    "why": "Binary semaphore có hai trạng thái logic 0 và 1.; Counting semaphore đếm nhiều tài nguyên; wait giảm, signal tăng theo ngữ nghĩa semaphore. Chưa đối chiếu được với bài học scan.",
+    "why": "Binary semaphore có hai trạng thái logic 0 và 1.; Counting semaphore đếm nhiều tài nguyên; wait giảm, signal tăng theo ngữ nghĩa semaphore.",
     "ref": "Trang 10",
     "labels": [
       "A",
@@ -1041,7 +1041,7 @@ window.EXTRA_QUESTIONS = [
       "Luôn cần một CPU vật lý riêng"
     ],
     "correct": 2,
-    "why": "Container thường chia sẻ kernel máy chủ; VM có hệ điều hành khách riêng.; Container nhẹ/khởi động nhanh; VM cô lập ở mức máy ảo. Chưa đối chiếu được với bài học scan.",
+    "why": "Container thường chia sẻ kernel máy chủ; VM có hệ điều hành khách riêng.; Container nhẹ/khởi động nhanh; VM cô lập ở mức máy ảo.",
     "ref": "Trang 10",
     "labels": [
       "A",
@@ -1062,7 +1062,7 @@ window.EXTRA_QUESTIONS = [
       "Không thể minh họa bằng thuật toán"
     ],
     "correct": 1,
-    "why": "Busy waiting = lặp kiểm tra liên tục, gây tốn CPU.; Peterson áp dụng kinh điển cho 2 tiến trình; spinlock sử dụng chờ bận. Chưa đối chiếu được với bài học scan.",
+    "why": "Busy waiting = lặp kiểm tra liên tục, gây tốn CPU.; Peterson áp dụng kinh điển cho 2 tiến trình; spinlock sử dụng chờ bận.",
     "ref": "Trang 11",
     "labels": [
       "A",
@@ -1083,7 +1083,7 @@ window.EXTRA_QUESTIONS = [
       "Tắt màn hình"
     ],
     "correct": 2,
-    "why": "Context switch: lưu trạng thái tiến trình cũ, nạp trạng thái tiến trình mới.; PCB lưu thông tin cần thiết để tiếp tục thực thi. Chưa đối chiếu được với bài học scan.",
+    "why": "Context switch: lưu trạng thái tiến trình cũ, nạp trạng thái tiến trình mới.; PCB lưu thông tin cần thiết để tiếp tục thực thi.",
     "ref": "Trang 11",
     "labels": [
       "A",
@@ -1104,7 +1104,7 @@ window.EXTRA_QUESTIONS = [
       "Starvation"
     ],
     "correct": 3,
-    "why": "Bounded waiting: giới hạn số lần tiến trình khác vượt lên trước.; Giúp ngăn starvation; khác progress và mutual exclusion. Chưa đối chiếu được với bài học scan.",
+    "why": "Bounded waiting: giới hạn số lần tiến trình khác vượt lên trước.; Giúp ngăn starvation; khác progress và mutual exclusion.",
     "ref": "Trang 11",
     "labels": [
       "A",
@@ -1125,7 +1125,7 @@ window.EXTRA_QUESTIONS = [
       "Chưa từng được tạo"
     ],
     "correct": 1,
-    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu. Chưa đối chiếu được với bài học scan.",
+    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu.",
     "ref": "Trang 11",
     "labels": [
       "A",
@@ -1146,7 +1146,7 @@ window.EXTRA_QUESTIONS = [
       "Không thể bảo vệ hệ thống"
     ],
     "correct": 0,
-    "why": "Ý chính: Chi phí truyền thông giữa các thành phần có thể cao hơn.; Monolithic: nhiều dịch vụ trong kernel; microkernel: chuyển nhiều dịch vụ sang user space. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Chi phí truyền thông giữa các thành phần có thể cao hơn.; Monolithic: nhiều dịch vụ trong kernel; microkernel: chuyển nhiều dịch vụ sang user space.",
     "ref": "Trang 11",
     "labels": [
       "A",
@@ -1167,7 +1167,7 @@ window.EXTRA_QUESTIONS = [
       "Tạo hình nền động"
     ],
     "correct": 0,
-    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu. Chưa đối chiếu được với bài học scan.",
+    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu.",
     "ref": "Trang 12",
     "labels": [
       "A",
@@ -1188,7 +1188,7 @@ window.EXTRA_QUESTIONS = [
       "Không trưng dụng, chọn tiến trình dài nhất"
     ],
     "correct": 2,
-    "why": "SRTF = Shortest Remaining Time First, phiên bản SJF có trưng dụng.; Tiến trình mới có thời gian còn lại ngắn hơn có thể giành CPU. Chưa đối chiếu được với bài học scan.",
+    "why": "SRTF = Shortest Remaining Time First, phiên bản SJF có trưng dụng.; Tiến trình mới có thời gian còn lại ngắn hơn có thể giành CPU.",
     "ref": "Trang 12",
     "labels": [
       "A",
@@ -1209,7 +1209,7 @@ window.EXTRA_QUESTIONS = [
       "Tạo tập tin tạm"
     ],
     "correct": 2,
-    "why": "Ý chính: Chờ tiến trình con kết thúc và thu nhận trạng thái kết thúc.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Chờ tiến trình con kết thúc và thu nhận trạng thái kết thúc.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con.",
     "ref": "Trang 12",
     "labels": [
       "A",
@@ -1230,7 +1230,7 @@ window.EXTRA_QUESTIONS = [
       "Cho phép chương trình người dùng yêu cầu dịch vụ từ hệ điều hành"
     ],
     "correct": 3,
-    "why": "Ý chính: Cho phép chương trình người dùng yêu cầu dịch vụ từ hệ điều hành.; Kernel là phần lõi; user mode bị giới hạn, kernel mode thực thi lệnh đặc quyền. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Cho phép chương trình người dùng yêu cầu dịch vụ từ hệ điều hành.; Kernel là phần lõi; user mode bị giới hạn, kernel mode thực thi lệnh đặc quyền.",
     "ref": "Trang 12",
     "labels": [
       "A",
@@ -1251,7 +1251,7 @@ window.EXTRA_QUESTIONS = [
       "Tạm thời vô hiệu hóa ngắt để tránh bị gián đoạn trong đoạn mã cần bảo vệ"
     ],
     "correct": 3,
-    "why": "Disable interrupts tránh bị ngắt trên CPU đang chạy trong đoạn mã bảo vệ.; Không đủ bảo vệ giữa nhiều CPU và không nên tắt ngắt quá lâu. Chưa đối chiếu được với bài học scan.",
+    "why": "Disable interrupts tránh bị ngắt trên CPU đang chạy trong đoạn mã bảo vệ.; Không đủ bảo vệ giữa nhiều CPU và không nên tắt ngắt quá lâu.",
     "ref": "Trang 12",
     "labels": [
       "A",
@@ -1272,7 +1272,7 @@ window.EXTRA_QUESTIONS = [
       "Cho phép chạy nhiều môi trường hệ điều hành độc lập trên cùng phần cứng"
     ],
     "correct": 3,
-    "why": "Ý chính: Cho phép chạy nhiều môi trường hệ điều hành độc lập trên cùng phần cứng.; OS quản lý CPU, bộ nhớ, I/O, tệp và cung cấp môi trường chạy chương trình. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Cho phép chạy nhiều môi trường hệ điều hành độc lập trên cùng phần cứng.; OS quản lý CPU, bộ nhớ, I/O, tệp và cung cấp môi trường chạy chương trình.",
     "ref": "Trang 12",
     "labels": [
       "A",
@@ -1293,7 +1293,7 @@ window.EXTRA_QUESTIONS = [
       "Kích thước màn hình"
     ],
     "correct": 1,
-    "why": "Time quantum: thời lượng CPU tối đa mỗi lượt trong Round Robin.; Quantum nhỏ: nhiều context switch; quá lớn: RR gần FCFS. Chưa đối chiếu được với bài học scan.",
+    "why": "Time quantum: thời lượng CPU tối đa mỗi lượt trong Round Robin.; Quantum nhỏ: nhiều context switch; quá lớn: RR gần FCFS.",
     "ref": "Trang 13",
     "labels": [
       "A",
@@ -1314,7 +1314,7 @@ window.EXTRA_QUESTIONS = [
       "Không chia sẻ bất kỳ tài nguyên nào"
     ],
     "correct": 1,
-    "why": "Các luồng cùng process chia sẻ code, data, heap và tệp đang mở.; Mỗi luồng có stack, thanh ghi và program counter riêng. Chưa đối chiếu được với bài học scan.",
+    "why": "Các luồng cùng process chia sẻ code, data, heap và tệp đang mở.; Mỗi luồng có stack, thanh ghi và program counter riêng.",
     "ref": "Trang 13",
     "labels": [
       "A",
@@ -1335,7 +1335,7 @@ window.EXTRA_QUESTIONS = [
       "Loại trừ khi truy cập vùng đệm và đếm số ô trống/ô đầy"
     ],
     "correct": 3,
-    "why": "Producer-Consumer: mutex bảo vệ buffer, empty đếm ô trống, full đếm ô đầy.; Producer chờ khi buffer đầy; consumer chờ khi buffer rỗng. Chưa đối chiếu được với bài học scan.",
+    "why": "Producer-Consumer: mutex bảo vệ buffer, empty đếm ô trống, full đếm ô đầy.; Producer chờ khi buffer đầy; consumer chờ khi buffer rỗng.",
     "ref": "Trang 13",
     "labels": [
       "A",
@@ -1356,7 +1356,7 @@ window.EXTRA_QUESTIONS = [
       "Chuyển CPU cho tiến trình được chọn thực thi"
     ],
     "correct": 3,
-    "why": "Ý chính: Chuyển CPU cho tiến trình được chọn thực thi.; Waiting time: thời gian chờ ready; turnaround = hoàn thành − đến; response = chạy lần đầu − đến. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Chuyển CPU cho tiến trình được chọn thực thi.; Waiting time: thời gian chờ ready; turnaround = hoàn thành − đến; response = chạy lần đầu − đến.",
     "ref": "Trang 13",
     "labels": [
       "A",
@@ -1377,7 +1377,7 @@ window.EXTRA_QUESTIONS = [
       "Xóa bỏ mọi tập tin hệ thống"
     ],
     "correct": 1,
-    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu. Chưa đối chiếu được với bài học scan.",
+    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu.",
     "ref": "Trang 13",
     "labels": [
       "A",
@@ -1398,7 +1398,7 @@ window.EXTRA_QUESTIONS = [
       "Kích thước biểu tượng"
     ],
     "correct": 1,
-    "why": "Ý chính: Mức ưu tiên của tiến trình.; Waiting time: thời gian chờ ready; turnaround = hoàn thành − đến; response = chạy lần đầu − đến. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Mức ưu tiên của tiến trình.; Waiting time: thời gian chờ ready; turnaround = hoàn thành − đến; response = chạy lần đầu − đến.",
     "ref": "Trang 14",
     "labels": [
       "A",
@@ -1419,7 +1419,7 @@ window.EXTRA_QUESTIONS = [
       "Thời gian cài đặt hệ điều hành"
     ],
     "correct": 2,
-    "why": "Response time = thời điểm được CPU lần đầu − thời điểm đến.; Turnaround = hoàn thành − đến; waiting = tổng thời gian chờ ready. Chưa đối chiếu được với bài học scan.",
+    "why": "Response time = thời điểm được CPU lần đầu − thời điểm đến.; Turnaround = hoàn thành − đến; waiting = tổng thời gian chờ ready.",
     "ref": "Trang 14",
     "labels": [
       "A",
@@ -1440,7 +1440,7 @@ window.EXTRA_QUESTIONS = [
       "Chỉ tên thư mục"
     ],
     "correct": 2,
-    "why": "Ý chính: Hiệu năng, an toàn, dễ mở rộng và dễ bảo trì.; Monolithic: nhiều dịch vụ trong kernel; microkernel: chuyển nhiều dịch vụ sang user space. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Hiệu năng, an toàn, dễ mở rộng và dễ bảo trì.; Monolithic: nhiều dịch vụ trong kernel; microkernel: chuyển nhiều dịch vụ sang user space.",
     "ref": "Trang 14",
     "labels": [
       "A",
@@ -1461,7 +1461,7 @@ window.EXTRA_QUESTIONS = [
       "Tắt một lõi CPU vĩnh viễn"
     ],
     "correct": 1,
-    "why": "Processor affinity: xu hướng chạy tiến trình/luồng trên cùng CPU/lõi.; Lợi ích: cache locality, giảm chi phí di chuyển giữa các lõi. Chưa đối chiếu được với bài học scan.",
+    "why": "Processor affinity: xu hướng chạy tiến trình/luồng trên cùng CPU/lõi.; Lợi ích: cache locality, giảm chi phí di chuyển giữa các lõi.",
     "ref": "Trang 14",
     "labels": [
       "A",
@@ -1482,7 +1482,7 @@ window.EXTRA_QUESTIONS = [
       "Không thể chạy tiến trình nào"
     ],
     "correct": 0,
-    "why": "FCFS có convoy effect: tiến trình ngắn chờ sau tiến trình dài.; FCFS không trưng dụng, đơn giản nhưng thời gian chờ có thể cao. Chưa đối chiếu được với bài học scan.",
+    "why": "FCFS có convoy effect: tiến trình ngắn chờ sau tiến trình dài.; FCFS không trưng dụng, đơn giản nhưng thời gian chờ có thể cao.",
     "ref": "Trang 15",
     "labels": [
       "A",
@@ -1503,7 +1503,7 @@ window.EXTRA_QUESTIONS = [
       "Ứng dụng người dùng"
     ],
     "correct": 0,
-    "why": "Ý chính: Kernel.; OS quản lý CPU, bộ nhớ, I/O, tệp và cung cấp môi trường chạy chương trình. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Kernel.; OS quản lý CPU, bộ nhớ, I/O, tệp và cung cấp môi trường chạy chương trình.",
     "ref": "Trang 15",
     "labels": [
       "A",
@@ -1524,7 +1524,7 @@ window.EXTRA_QUESTIONS = [
       "API luôn là phần cứng"
     ],
     "correct": 0,
-    "why": "API cung cấp hàm tiện dụng; không phải mọi lời gọi API đều sinh system call.; System call chuyển vào kernel để yêu cầu dịch vụ được bảo vệ. Chưa đối chiếu được với bài học scan.",
+    "why": "API cung cấp hàm tiện dụng; không phải mọi lời gọi API đều sinh system call.; System call chuyển vào kernel để yêu cầu dịch vụ được bảo vệ.",
     "ref": "Trang 15",
     "labels": [
       "A",
@@ -1545,7 +1545,7 @@ window.EXTRA_QUESTIONS = [
       "Starvation là một tiến trình có thể bị chờ rất lâu vì luôn bị bỏ qua, không nhất thiết tất cả đều kẹt"
     ],
     "correct": 3,
-    "why": "Starvation: tiến trình bị bỏ qua quá lâu; deadlock: các tiến trình chờ nhau không tiến triển.; Aging là một biện pháp giảm starvation. Chưa đối chiếu được với bài học scan.",
+    "why": "Starvation: tiến trình bị bỏ qua quá lâu; deadlock: các tiến trình chờ nhau không tiến triển.; Aging là một biện pháp giảm starvation.",
     "ref": "Trang 15",
     "labels": [
       "A",
@@ -1566,7 +1566,7 @@ window.EXTRA_QUESTIONS = [
       "Chương trình là phần cứng, tiến trình là dây cáp"
     ],
     "correct": 1,
-    "why": "Ý chính: Chương trình là mã tĩnh, tiến trình là chương trình đang thực thi.; Ready chờ CPU; Running đang chạy; Blocked chờ sự kiện/I/O. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Chương trình là mã tĩnh, tiến trình là chương trình đang thực thi.; Ready chờ CPU; Running đang chạy; Blocked chờ sự kiện/I/O.",
     "ref": "Trang 15",
     "labels": [
       "A",
@@ -1587,7 +1587,7 @@ window.EXTRA_QUESTIONS = [
       "Chọn thiết bị âm thanh mặc định"
     ],
     "correct": 2,
-    "why": "Ý chính: Chọn tiến trình trong hàng đợi sẵn sàng để cấp CPU thực thi.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Chọn tiến trình trong hàng đợi sẵn sàng để cấp CPU thực thi.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất.",
     "ref": "Trang 16",
     "labels": [
       "A",
@@ -1608,7 +1608,7 @@ window.EXTRA_QUESTIONS = [
       "Cả hai đều bị xóa ngay"
     ],
     "correct": 1,
-    "why": "Ý chính: Cùng tiếp tục thực thi từ sau lời gọi fork(), nhưng có PID khác nhau.; Process = chương trình đang thực thi; PCB lưu PID, trạng thái, thanh ghi, bộ đếm lệnh. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Cùng tiếp tục thực thi từ sau lời gọi fork(), nhưng có PID khác nhau.; Process = chương trình đang thực thi; PCB lưu PID, trạng thái, thanh ghi, bộ đếm lệnh.",
     "ref": "Trang 16",
     "labels": [
       "A",
@@ -1629,7 +1629,7 @@ window.EXTRA_QUESTIONS = [
       "Xóa hàng đợi sẵn sàng"
     ],
     "correct": 1,
-    "why": "Ý chính: Phân bố tải công việc tương đối đều giữa các lõi CPU.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Phân bố tải công việc tương đối đều giữa các lõi CPU.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất.",
     "ref": "Trang 16",
     "labels": [
       "A",
@@ -1650,7 +1650,7 @@ window.EXTRA_QUESTIONS = [
       "Tạo nhiều biểu tượng màn hình"
     ],
     "correct": 1,
-    "why": "Ý chính: Đáp ứng đúng thời hạn.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Đáp ứng đúng thời hạn.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành.",
     "ref": "Trang 16",
     "labels": [
       "A",
@@ -1671,7 +1671,7 @@ window.EXTRA_QUESTIONS = [
       "Thực thi chương trình, thao tác tập tin, vào/ra và truyền thông"
     ],
     "correct": 3,
-    "why": "Ý chính: Thực thi chương trình, thao tác tập tin, vào/ra và truyền thông.; API là giao diện lập trình thuận tiện; system call yêu cầu dịch vụ từ kernel. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Thực thi chương trình, thao tác tập tin, vào/ra và truyền thông.; API là giao diện lập trình thuận tiện; system call yêu cầu dịch vụ từ kernel.",
     "ref": "Trang 16",
     "labels": [
       "A",
@@ -1692,7 +1692,7 @@ window.EXTRA_QUESTIONS = [
       "Vì phần cứng không cần bảo vệ"
     ],
     "correct": 0,
-    "why": "Ý chính: Vì cần hệ điều hành kiểm soát an toàn và chia sẻ tài nguyên.; API là giao diện lập trình thuận tiện; system call yêu cầu dịch vụ từ kernel. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Vì cần hệ điều hành kiểm soát an toàn và chia sẻ tài nguyên.; API là giao diện lập trình thuận tiện; system call yêu cầu dịch vụ từ kernel.",
     "ref": "Trang 16",
     "labels": [
       "A",
@@ -1713,7 +1713,7 @@ window.EXTRA_QUESTIONS = [
       "Không dùng hàng đợi"
     ],
     "correct": 0,
-    "why": "MLFQ điều chỉnh ưu tiên theo hành vi: dùng hết quantum thường hạ mức.; Tiến trình I/O-bound thường được ưu tiên đáp ứng nhanh; có thể tăng ưu tiên chống starvation. Chưa đối chiếu được với bài học scan.",
+    "why": "MLFQ điều chỉnh ưu tiên theo hành vi: dùng hết quantum thường hạ mức.; Tiến trình I/O-bound thường được ưu tiên đáp ứng nhanh; có thể tăng ưu tiên chống starvation.",
     "ref": "Trang 17",
     "labels": [
       "A",
@@ -1734,7 +1734,7 @@ window.EXTRA_QUESTIONS = [
       "Tiến trình không có mã chương trình"
     ],
     "correct": 2,
-    "why": "Orphan: tiến trình cha kết thúc khi con còn sống; hệ thống nhận nuôi con.; Zombie: con đã kết thúc nhưng cha chưa thu nhận trạng thái. Chưa đối chiếu được với bài học scan.",
+    "why": "Orphan: tiến trình cha kết thúc khi con còn sống; hệ thống nhận nuôi con.; Zombie: con đã kết thúc nhưng cha chưa thu nhận trạng thái.",
     "ref": "Trang 17",
     "labels": [
       "A",
@@ -1755,7 +1755,7 @@ window.EXTRA_QUESTIONS = [
       "Lưu danh sách phím tắt trình duyệt"
     ],
     "correct": 1,
-    "why": "Ý chính: Lưu thông tin quản lý tiến trình như trạng thái, thanh ghi, bộ đếm chương trình.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Lưu thông tin quản lý tiến trình như trạng thái, thanh ghi, bộ đếm chương trình.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con.",
     "ref": "Trang 17",
     "labels": [
       "A",
@@ -1776,7 +1776,7 @@ window.EXTRA_QUESTIONS = [
       "Không có kernel"
     ],
     "correct": 0,
-    "why": "Monolithic kernel: nhiều dịch vụ chạy ở kernel mode, thường giảm chi phí gọi qua lại.; Microkernel: kernel nhỏ, nhiều dịch vụ ở user mode, tăng cô lập lỗi. Chưa đối chiếu được với bài học scan.",
+    "why": "Monolithic kernel: nhiều dịch vụ chạy ở kernel mode, thường giảm chi phí gọi qua lại.; Microkernel: kernel nhỏ, nhiều dịch vụ ở user mode, tăng cô lập lỗi.",
     "ref": "Trang 17",
     "labels": [
       "A",
@@ -1797,7 +1797,7 @@ window.EXTRA_QUESTIONS = [
       "Vì mọi luồng luôn chạy tuần tự tuyệt đối"
     ],
     "correct": 2,
-    "why": "Ý chính: Cần đồng bộ khi nhiều luồng truy cập dữ liệu dùng chung.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Cần đồng bộ khi nhiều luồng truy cập dữ liệu dùng chung.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con.",
     "ref": "Trang 18",
     "labels": [
       "A",
@@ -1818,7 +1818,7 @@ window.EXTRA_QUESTIONS = [
       "Tiến trình đã bị xóa"
     ],
     "correct": 1,
-    "why": "Ý chính: Tiến trình đang được CPU thực thi.; Ready chờ CPU; Running đang chạy; Blocked chờ sự kiện/I/O. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Tiến trình đang được CPU thực thi.; Ready chờ CPU; Running đang chạy; Blocked chờ sự kiện/I/O.",
     "ref": "Trang 18",
     "labels": [
       "A",
@@ -1839,7 +1839,7 @@ window.EXTRA_QUESTIONS = [
       "Khi chỉ có một tiến trình duy nhất và không có dữ liệu chia sẻ"
     ],
     "correct": 1,
-    "why": "Ý chính: Khi nhiều tiến trình/luồng cùng truy cập tài nguyên hoặc dữ liệu dùng chung.; Critical section: đoạn mã truy cập dữ liệu chung; race condition do thứ tự thực thi xen kẽ. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Khi nhiều tiến trình/luồng cùng truy cập tài nguyên hoặc dữ liệu dùng chung.; Critical section: đoạn mã truy cập dữ liệu chung; race condition do thứ tự thực thi xen kẽ.",
     "ref": "Trang 18",
     "labels": [
       "A",
@@ -1860,7 +1860,7 @@ window.EXTRA_QUESTIONS = [
       "Tiến trình đã kết thúc"
     ],
     "correct": 1,
-    "why": "Ý chính: Tiến trình liên tục kiểm tra điều kiện trong khi chờ.; Ba yêu cầu: mutual exclusion, progress, bounded waiting. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Tiến trình liên tục kiểm tra điều kiện trong khi chờ.; Ba yêu cầu: mutual exclusion, progress, bounded waiting.",
     "ref": "Trang 18",
     "labels": [
       "A",
@@ -1881,7 +1881,7 @@ window.EXTRA_QUESTIONS = [
       "Một loại bộ nhớ ngoài"
     ],
     "correct": 2,
-    "why": "MLFQ = Multilevel Feedback Queue: nhiều hàng đợi ưu tiên, cho phép thay đổi mức.; Ưu tiên được điều chỉnh theo hành vi sử dụng CPU/I/O. Chưa đối chiếu được với bài học scan.",
+    "why": "MLFQ = Multilevel Feedback Queue: nhiều hàng đợi ưu tiên, cho phép thay đổi mức.; Ưu tiên được điều chỉnh theo hành vi sử dụng CPU/I/O.",
     "ref": "Trang 18",
     "labels": [
       "A",
@@ -1902,7 +1902,7 @@ window.EXTRA_QUESTIONS = [
       "Kết quả phụ thuộc vào thứ tự thực thi xen kẽ của các tiến trình/luồng"
     ],
     "correct": 3,
-    "why": "Ý chính: Kết quả phụ thuộc vào thứ tự thực thi xen kẽ của các tiến trình/luồng.; Ba yêu cầu: mutual exclusion, progress, bounded waiting. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Kết quả phụ thuộc vào thứ tự thực thi xen kẽ của các tiến trình/luồng.; Ba yêu cầu: mutual exclusion, progress, bounded waiting.",
     "ref": "Trang 19",
     "labels": [
       "A",
@@ -1923,7 +1923,7 @@ window.EXTRA_QUESTIONS = [
       "Loại bỏ hoàn toàn nhu cầu dùng phần cứng"
     ],
     "correct": 0,
-    "why": "Ý chính: Sử dụng tài nguyên hiệu quả và tạo môi trường thuận tiện cho người dùng.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Sử dụng tài nguyên hiệu quả và tạo môi trường thuận tiện cho người dùng.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành.",
     "ref": "Trang 19",
     "labels": [
       "A",
@@ -1944,7 +1944,7 @@ window.EXTRA_QUESTIONS = [
       "Phần giao diện đăng nhập"
     ],
     "correct": 1,
-    "why": "Ý chính: Đoạn mã truy cập hoặc cập nhật dữ liệu/tài nguyên dùng chung.; Critical section: đoạn mã truy cập dữ liệu chung; race condition do thứ tự thực thi xen kẽ. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Đoạn mã truy cập hoặc cập nhật dữ liệu/tài nguyên dùng chung.; Critical section: đoạn mã truy cập dữ liệu chung; race condition do thứ tự thực thi xen kẽ.",
     "ref": "Trang 19",
     "labels": [
       "A",
@@ -1965,7 +1965,7 @@ window.EXTRA_QUESTIONS = [
       "Hai hay nhiều tiến trình chờ nhau vô hạn nên không tiến trình nào tiếp tục được"
     ],
     "correct": 3,
-    "why": "Deadlock: nhóm tiến trình chờ nhau vô hạn, không thể tiếp tục.; Bốn điều kiện cần: mutual exclusion, hold-and-wait, no preemption, circular wait. Chưa đối chiếu được với bài học scan.",
+    "why": "Deadlock: nhóm tiến trình chờ nhau vô hạn, không thể tiếp tục.; Bốn điều kiện cần: mutual exclusion, hold-and-wait, no preemption, circular wait.",
     "ref": "Trang 19",
     "labels": [
       "A",
@@ -1986,7 +1986,7 @@ window.EXTRA_QUESTIONS = [
       "Chuyển tiến trình sang trạng thái zombie"
     ],
     "correct": 1,
-    "why": "Compare-and-Swap (CAS): nếu giá trị hiện tại bằng kỳ vọng thì thay bằng giá trị mới.; CAS là thao tác nguyên tử, dùng trong đồng bộ không khóa hoặc xây dựng khóa. Chưa đối chiếu được với bài học scan.",
+    "why": "Compare-and-Swap (CAS): nếu giá trị hiện tại bằng kỳ vọng thì thay bằng giá trị mới.; CAS là thao tác nguyên tử, dùng trong đồng bộ không khóa hoặc xây dựng khóa.",
     "ref": "Trang 20",
     "labels": [
       "A",
@@ -2007,7 +2007,7 @@ window.EXTRA_QUESTIONS = [
       "Trao đổi dữ liệu nhanh vì các tiến trình cùng truy cập vùng nhớ chung"
     ],
     "correct": 3,
-    "why": "Shared memory: nhiều tiến trình cùng truy cập vùng nhớ, trao đổi nhanh.; Cần đồng bộ khi ghi/đọc đồng thời để tránh race condition. Chưa đối chiếu được với bài học scan.",
+    "why": "Shared memory: nhiều tiến trình cùng truy cập vùng nhớ, trao đổi nhanh.; Cần đồng bộ khi ghi/đọc đồng thời để tránh race condition.",
     "ref": "Trang 20",
     "labels": [
       "A",
@@ -2028,7 +2028,7 @@ window.EXTRA_QUESTIONS = [
       "Công cụ đồng bộ hóa dựa trên một biến nguyên và các thao tác nguyên tử"
     ],
     "correct": 3,
-    "why": "Semaphore là biến đếm được thao tác nguyên tử bằng wait() và signal().; Binary semaphore: 0/1; counting semaphore: quản lý nhiều đơn vị tài nguyên. Chưa đối chiếu được với bài học scan.",
+    "why": "Semaphore là biến đếm được thao tác nguyên tử bằng wait() và signal().; Binary semaphore: 0/1; counting semaphore: quản lý nhiều đơn vị tài nguyên.",
     "ref": "Trang 20",
     "labels": [
       "A",
@@ -2049,7 +2049,7 @@ window.EXTRA_QUESTIONS = [
       "Một phím tắt trên màn hình"
     ],
     "correct": 1,
-    "why": "Ý chính: Một chương trình đang được thực thi.; Process = chương trình đang thực thi; PCB lưu PID, trạng thái, thanh ghi, bộ đếm lệnh. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Một chương trình đang được thực thi.; Process = chương trình đang thực thi; PCB lưu PID, trạng thái, thanh ghi, bộ đếm lệnh.",
     "ref": "Trang 20",
     "labels": [
       "A",
@@ -2070,7 +2070,7 @@ window.EXTRA_QUESTIONS = [
       "Monitor chỉ dùng để hiển thị hình ảnh"
     ],
     "correct": 2,
-    "why": "Monitor đóng gói dữ liệu chia sẻ, thủ tục và cơ chế đồng bộ.; Condition variable thường dùng wait()/signal() trong monitor. Chưa đối chiếu được với bài học scan.",
+    "why": "Monitor đóng gói dữ liệu chia sẻ, thủ tục và cơ chế đồng bộ.; Condition variable thường dùng wait()/signal() trong monitor.",
     "ref": "Trang 21",
     "labels": [
       "A",
@@ -2091,7 +2091,7 @@ window.EXTRA_QUESTIONS = [
       "Tiến trình chưa được tạo"
     ],
     "correct": 1,
-    "why": "Ý chính: Tiến trình đã sẵn sàng chạy và đang chờ CPU.; Process = chương trình đang thực thi; PCB lưu PID, trạng thái, thanh ghi, bộ đếm lệnh. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Tiến trình đã sẵn sàng chạy và đang chờ CPU.; Process = chương trình đang thực thi; PCB lưu PID, trạng thái, thanh ghi, bộ đếm lệnh.",
     "ref": "Trang 21",
     "labels": [
       "A",
@@ -2112,7 +2112,7 @@ window.EXTRA_QUESTIONS = [
       "Chỉ dùng để soạn thảo văn bản"
     ],
     "correct": 1,
-    "why": "Ý chính: Quản lý tài nguyên phần cứng và cung cấp môi trường thực thi cho chương trình.; OS quản lý CPU, bộ nhớ, I/O, tệp và cung cấp môi trường chạy chương trình. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Quản lý tài nguyên phần cứng và cung cấp môi trường thực thi cho chương trình.; OS quản lý CPU, bộ nhớ, I/O, tệp và cung cấp môi trường chạy chương trình.",
     "ref": "Trang 1",
     "labels": [
       "A",
@@ -2133,7 +2133,7 @@ window.EXTRA_QUESTIONS = [
       "Tập tin và thư mục"
     ],
     "correct": 1,
-    "why": "Ý chính: Người dùng/chương trình ứ.; Kernel là phần lõi; user mode bị giới hạn, kernel mode thực thi lệnh đặc quyền. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Người dùng/chương trình ứ.; Kernel là phần lõi; user mode bị giới hạn, kernel mode thực thi lệnh đặc quyền.",
     "ref": "Trang 2",
     "labels": [
       "A",
@@ -2154,7 +2154,7 @@ window.EXTRA_QUESTIONS = [
       "Loại bỏ hoàn toàn nhu cầu dùng phần cứng"
     ],
     "correct": 0,
-    "why": "Ý chính: Sử dụng tài nguyên hiệu quả và tạo môi trường thuận tiện cho người dùng.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Sử dụng tài nguyên hiệu quả và tạo môi trường thuận tiện cho người dùng.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành.",
     "ref": "Trang 2",
     "labels": [
       "A",
@@ -2175,7 +2175,7 @@ window.EXTRA_QUESTIONS = [
       "Ứng dụng người dùng"
     ],
     "correct": 0,
-    "why": "Ý chính: Kernel.; OS quản lý CPU, bộ nhớ, I/O, tệp và cung cấp môi trường chạy chương trình. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Kernel.; OS quản lý CPU, bộ nhớ, I/O, tệp và cung cấp môi trường chạy chương trình.",
     "ref": "Trang 2",
     "labels": [
       "A",
@@ -2196,7 +2196,7 @@ window.EXTRA_QUESTIONS = [
       "Cho phép chương trình người dùng yêu cầu dịch vụ từ hệ điều hành"
     ],
     "correct": 3,
-    "why": "Ý chính: Cho phép chương trình người dùng yêu cầu dịch vụ từ hệ điều hành.; Kernel là phần lõi; user mode bị giới hạn, kernel mode thực thi lệnh đặc quyền. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Cho phép chương trình người dùng yêu cầu dịch vụ từ hệ điều hành.; Kernel là phần lõi; user mode bị giới hạn, kernel mode thực thi lệnh đặc quyền.",
     "ref": "Trang 2",
     "labels": [
       "A",
@@ -2217,7 +2217,7 @@ window.EXTRA_QUESTIONS = [
       "Để xóa bỏ hoàn toàn quyền truy cập bộ nhớ"
     ],
     "correct": 0,
-    "why": "Ý chính: Để bảo vệ hệ thống, ngăn chương trình người dùng truy cập trực tiếp tài nguyên nhạy cảm.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Để bảo vệ hệ thống, ngăn chương trình người dùng truy cập trực tiếp tài nguyên nhạy cảm.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành.",
     "ref": "Trang 2",
     "labels": [
       "A",
@@ -2238,7 +2238,7 @@ window.EXTRA_QUESTIONS = [
       "Chỉ cho phép chạy trò chơi"
     ],
     "correct": 1,
-    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu. Chưa đối chiếu được với bài học scan.",
+    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu.",
     "ref": "Trang 3",
     "labels": [
       "A",
@@ -2259,7 +2259,7 @@ window.EXTRA_QUESTIONS = [
       "Không cần bộ nhớ chính"
     ],
     "correct": 1,
-    "why": "Ý chính: Cho phép nhiều tiến trình/chương trình cùng được quản lý và chia sẻ CPU.; Kernel là phần lõi; user mode bị giới hạn, kernel mode thực thi lệnh đặc quyền. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Cho phép nhiều tiến trình/chương trình cùng được quản lý và chia sẻ CPU.; Kernel là phần lõi; user mode bị giới hạn, kernel mode thực thi lệnh đặc quyền.",
     "ref": "Trang 3",
     "labels": [
       "A",
@@ -2280,7 +2280,7 @@ window.EXTRA_QUESTIONS = [
       "Cấp phát, thu hồi, bảo vệ và tổ chức bộ nhớ cho các tiến trình"
     ],
     "correct": 3,
-    "why": "Ý chính: Cấp phát, thu hồi, bảo vệ và tổ chức bộ nhớ cho các tiến trình.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Cấp phát, thu hồi, bảo vệ và tổ chức bộ nhớ cho các tiến trình.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành.",
     "ref": "Trang 3",
     "labels": [
       "A",
@@ -2301,7 +2301,7 @@ window.EXTRA_QUESTIONS = [
       "Tạo, xóa, đọc, ghi và tổ chức tập tin/thư mục"
     ],
     "correct": 3,
-    "why": "Ý chính: Tạo, xóa, đọc, ghi và tổ chức tập tin/thư mục.; OS quản lý CPU, bộ nhớ, I/O, tệp và cung cấp môi trường chạy chương trình. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Tạo, xóa, đọc, ghi và tổ chức tập tin/thư mục.; OS quản lý CPU, bộ nhớ, I/O, tệp và cung cấp môi trường chạy chương trình.",
     "ref": "Trang 3",
     "labels": [
       "A",
@@ -2322,7 +2322,7 @@ window.EXTRA_QUESTIONS = [
       "Chơi game tương tác thời gian thực"
     ],
     "correct": 1,
-    "why": "Ý chính: Xử lý các công việc theo lô, ít tương tác trực tiếp với người dùng.; Kernel là phần lõi; user mode bị giới hạn, kernel mode thực thi lệnh đặc quyền. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Xử lý các công việc theo lô, ít tương tác trực tiếp với người dùng.; Kernel là phần lõi; user mode bị giới hạn, kernel mode thực thi lệnh đặc quyền.",
     "ref": "Trang 3",
     "labels": [
       "A",
@@ -2343,7 +2343,7 @@ window.EXTRA_QUESTIONS = [
       "Tạo nhiều biểu tượng màn hình"
     ],
     "correct": 1,
-    "why": "Ý chính: Đáp ứng đúng thời hạn.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Đáp ứng đúng thời hạn.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành.",
     "ref": "Trang 4",
     "labels": [
       "A",
@@ -2364,7 +2364,7 @@ window.EXTRA_QUESTIONS = [
       "Cho phép chạy nhiều môi trường hệ điều hành độc lập trên cùng phần cứng"
     ],
     "correct": 3,
-    "why": "Ý chính: Cho phép chạy nhiều môi trường hệ điều hành độc lập trên cùng phần cứng.; OS quản lý CPU, bộ nhớ, I/O, tệp và cung cấp môi trường chạy chương trình. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Cho phép chạy nhiều môi trường hệ điều hành độc lập trên cùng phần cứng.; OS quản lý CPU, bộ nhớ, I/O, tệp và cung cấp môi trường chạy chương trình.",
     "ref": "Trang 4",
     "labels": [
       "A",
@@ -2385,7 +2385,7 @@ window.EXTRA_QUESTIONS = [
       "Luôn cần một CPU vật lý riêng"
     ],
     "correct": 2,
-    "why": "Container thường chia sẻ kernel máy chủ; VM có hệ điều hành khách riêng.; Container nhẹ/khởi động nhanh; VM cô lập ở mức máy ảo. Chưa đối chiếu được với bài học scan.",
+    "why": "Container thường chia sẻ kernel máy chủ; VM có hệ điều hành khách riêng.; Container nhẹ/khởi động nhanh; VM cô lập ở mức máy ảo.",
     "ref": "Trang 4",
     "labels": [
       "A",
@@ -2406,7 +2406,7 @@ window.EXTRA_QUESTIONS = [
       "Tắt màn hình"
     ],
     "correct": 2,
-    "why": "Ý chính: System call.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: System call.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành.",
     "ref": "Trang 4",
     "labels": [
       "A",
@@ -2427,7 +2427,7 @@ window.EXTRA_QUESTIONS = [
       "Các dây cáp kết nối phần cứng"
     ],
     "correct": 2,
-    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu. Chưa đối chiếu được với bài học scan.",
+    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu.",
     "ref": "Trang 5",
     "labels": [
       "A",
@@ -2448,7 +2448,7 @@ window.EXTRA_QUESTIONS = [
       "Thực thi chương trình, thao tác tập tin, vào/ra và truyền thông"
     ],
     "correct": 3,
-    "why": "Ý chính: Thực thi chương trình, thao tác tập tin, vào/ra và truyền thông.; API là giao diện lập trình thuận tiện; system call yêu cầu dịch vụ từ kernel. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Thực thi chương trình, thao tác tập tin, vào/ra và truyền thông.; API là giao diện lập trình thuận tiện; system call yêu cầu dịch vụ từ kernel.",
     "ref": "Trang 5",
     "labels": [
       "A",
@@ -2469,7 +2469,7 @@ window.EXTRA_QUESTIONS = [
       "Luôn cần màn hình cảm ứng"
     ],
     "correct": 0,
-    "why": "Ý chính: Người dùng nhập lệnh dạng văn bản để yêu cầu hệ thống thực hiện công việc.; Monolithic: nhiều dịch vụ trong kernel; microkernel: chuyển nhiều dịch vụ sang user space. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Người dùng nhập lệnh dạng văn bản để yêu cầu hệ thống thực hiện công việc.; Monolithic: nhiều dịch vụ trong kernel; microkernel: chuyển nhiều dịch vụ sang user space.",
     "ref": "Trang 5",
     "labels": [
       "A",
@@ -2490,7 +2490,7 @@ window.EXTRA_QUESTIONS = [
       "Xóa bỏ mọi tập tin hệ thống"
     ],
     "correct": 1,
-    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu. Chưa đối chiếu được với bài học scan.",
+    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu.",
     "ref": "Trang 5",
     "labels": [
       "A",
@@ -2511,7 +2511,7 @@ window.EXTRA_QUESTIONS = [
       "Tạo hình nền động"
     ],
     "correct": 0,
-    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu. Chưa đối chiếu được với bài học scan.",
+    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu.",
     "ref": "Trang 5",
     "labels": [
       "A",
@@ -2532,7 +2532,7 @@ window.EXTRA_QUESTIONS = [
       "Điều chỉnh độ sáng màn hình"
     ],
     "correct": 0,
-    "why": "Ý chính: Mở, đọc, ghi, đóng và xóa tập tin.; Monolithic: nhiều dịch vụ trong kernel; microkernel: chuyển nhiều dịch vụ sang user space. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Mở, đọc, ghi, đóng và xóa tập tin.; Monolithic: nhiều dịch vụ trong kernel; microkernel: chuyển nhiều dịch vụ sang user space.",
     "ref": "Trang 6",
     "labels": [
       "A",
@@ -2553,7 +2553,7 @@ window.EXTRA_QUESTIONS = [
       "API luôn là phần cứng"
     ],
     "correct": 0,
-    "why": "API cung cấp hàm tiện dụng; không phải mọi lời gọi API đều sinh system call.; System call chuyển vào kernel để yêu cầu dịch vụ được bảo vệ. Chưa đối chiếu được với bài học scan.",
+    "why": "API cung cấp hàm tiện dụng; không phải mọi lời gọi API đều sinh system call.; System call chuyển vào kernel để yêu cầu dịch vụ được bảo vệ.",
     "ref": "Trang 6",
     "labels": [
       "A",
@@ -2574,7 +2574,7 @@ window.EXTRA_QUESTIONS = [
       "Vì phần cứng không cần bảo vệ"
     ],
     "correct": 0,
-    "why": "Ý chính: Vì cần hệ điều hành kiểm soát an toàn và chia sẻ tài nguyên.; API là giao diện lập trình thuận tiện; system call yêu cầu dịch vụ từ kernel. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Vì cần hệ điều hành kiểm soát an toàn và chia sẻ tài nguyên.; API là giao diện lập trình thuận tiện; system call yêu cầu dịch vụ từ kernel.",
     "ref": "Trang 6",
     "labels": [
       "A",
@@ -2595,7 +2595,7 @@ window.EXTRA_QUESTIONS = [
       "Không có kernel"
     ],
     "correct": 0,
-    "why": "Monolithic kernel: nhiều dịch vụ chạy ở kernel mode, thường giảm chi phí gọi qua lại.; Microkernel: kernel nhỏ, nhiều dịch vụ ở user mode, tăng cô lập lỗi. Chưa đối chiếu được với bài học scan.",
+    "why": "Monolithic kernel: nhiều dịch vụ chạy ở kernel mode, thường giảm chi phí gọi qua lại.; Microkernel: kernel nhỏ, nhiều dịch vụ ở user mode, tăng cô lập lỗi.",
     "ref": "Trang 6",
     "labels": [
       "A",
@@ -2616,7 +2616,7 @@ window.EXTRA_QUESTIONS = [
       "Đưa toàn bộ ứng dụng văn phòng vào kernel"
     ],
     "correct": 2,
-    "why": "Microkernel giữ nhân nhỏ, dịch vụ chuyển ra user space.; Ưu: dễ bảo trì/cô lập lỗi; nhược: tăng chi phí IPC. Chưa đối chiếu được với bài học scan.",
+    "why": "Microkernel giữ nhân nhỏ, dịch vụ chuyển ra user space.; Ưu: dễ bảo trì/cô lập lỗi; nhược: tăng chi phí IPC.",
     "ref": "Trang 6",
     "labels": [
       "A",
@@ -2637,7 +2637,7 @@ window.EXTRA_QUESTIONS = [
       "Luôn nhanh hơn mọi kernel khác trong mọi trường hợp"
     ],
     "correct": 1,
-    "why": "Ý chính: Dễ mở rộng, dễ bảo trì và tăng tính cô lập lỗi.; API là giao diện lập trình thuận tiện; system call yêu cầu dịch vụ từ kernel. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Dễ mở rộng, dễ bảo trì và tăng tính cô lập lỗi.; API là giao diện lập trình thuận tiện; system call yêu cầu dịch vụ từ kernel.",
     "ref": "Trang 7",
     "labels": [
       "A",
@@ -2658,7 +2658,7 @@ window.EXTRA_QUESTIONS = [
       "Không thể bảo vệ hệ thống"
     ],
     "correct": 0,
-    "why": "Ý chính: Chi phí truyền thông giữa các thành phần có thể cao hơn.; Monolithic: nhiều dịch vụ trong kernel; microkernel: chuyển nhiều dịch vụ sang user space. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Chi phí truyền thông giữa các thành phần có thể cao hơn.; Monolithic: nhiều dịch vụ trong kernel; microkernel: chuyển nhiều dịch vụ sang user space.",
     "ref": "Trang 7",
     "labels": [
       "A",
@@ -2679,7 +2679,7 @@ window.EXTRA_QUESTIONS = [
       "Làm hệ điều hành mất khả năng mở rộng"
     ],
     "correct": 1,
-    "why": "Ý chính: Cho phép nạp/gỡ một số chức năng kernel linh hoạt khi cần.; OS services gồm thực thi chương trình, I/O, quản lý tệp, truyền thông, bảo vệ. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Cho phép nạp/gỡ một số chức năng kernel linh hoạt khi cần.; OS services gồm thực thi chương trình, I/O, quản lý tệp, truyền thông, bảo vệ.",
     "ref": "Trang 7",
     "labels": [
       "A",
@@ -2700,7 +2700,7 @@ window.EXTRA_QUESTIONS = [
       "Chỉ dùng để lưu mật khẩu"
     ],
     "correct": 1,
-    "why": "Ý chính: Giúp hệ điều hành giao tiếp và điều khiển thiết bị phần cứng.; API là giao diện lập trình thuận tiện; system call yêu cầu dịch vụ từ kernel. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Giúp hệ điều hành giao tiếp và điều khiển thiết bị phần cứng.; API là giao diện lập trình thuận tiện; system call yêu cầu dịch vụ từ kernel.",
     "ref": "Trang 7",
     "labels": [
       "A",
@@ -2721,7 +2721,7 @@ window.EXTRA_QUESTIONS = [
       "Chỉ tên thư mục"
     ],
     "correct": 2,
-    "why": "Ý chính: Hiệu năng, an toàn, dễ mở rộng và dễ bảo trì.; Monolithic: nhiều dịch vụ trong kernel; microkernel: chuyển nhiều dịch vụ sang user space. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Hiệu năng, an toàn, dễ mở rộng và dễ bảo trì.; Monolithic: nhiều dịch vụ trong kernel; microkernel: chuyển nhiều dịch vụ sang user space.",
     "ref": "Trang 7",
     "labels": [
       "A",
@@ -2742,7 +2742,7 @@ window.EXTRA_QUESTIONS = [
       "Một phím tắt trên màn hình"
     ],
     "correct": 1,
-    "why": "Ý chính: Một chương trình đang được thực thi.; Process = chương trình đang thực thi; PCB lưu PID, trạng thái, thanh ghi, bộ đếm lệnh. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Một chương trình đang được thực thi.; Process = chương trình đang thực thi; PCB lưu PID, trạng thái, thanh ghi, bộ đếm lệnh.",
     "ref": "Trang 8",
     "labels": [
       "A",
@@ -2763,7 +2763,7 @@ window.EXTRA_QUESTIONS = [
       "Chương trình là phần cứng, tiến trình là dây cáp"
     ],
     "correct": 1,
-    "why": "Ý chính: Chương trình là mã tĩnh, tiến trình là chương trình đang thực thi.; Ready chờ CPU; Running đang chạy; Blocked chờ sự kiện/I/O. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Chương trình là mã tĩnh, tiến trình là chương trình đang thực thi.; Ready chờ CPU; Running đang chạy; Blocked chờ sự kiện/I/O.",
     "ref": "Trang 8",
     "labels": [
       "A",
@@ -2784,7 +2784,7 @@ window.EXTRA_QUESTIONS = [
       "Lưu danh sách phím tắt trình duyệt"
     ],
     "correct": 1,
-    "why": "Ý chính: Lưu thông tin quản lý tiến trình như trạng thái, thanh ghi, bộ đếm chương trình.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Lưu thông tin quản lý tiến trình như trạng thái, thanh ghi, bộ đếm chương trình.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con.",
     "ref": "Trang 8",
     "labels": [
       "A",
@@ -2805,7 +2805,7 @@ window.EXTRA_QUESTIONS = [
       "Tiến trình chưa được tạo"
     ],
     "correct": 1,
-    "why": "Ý chính: Tiến trình đã sẵn sàng chạy và đang chờ CPU.; Process = chương trình đang thực thi; PCB lưu PID, trạng thái, thanh ghi, bộ đếm lệnh. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Tiến trình đã sẵn sàng chạy và đang chờ CPU.; Process = chương trình đang thực thi; PCB lưu PID, trạng thái, thanh ghi, bộ đếm lệnh.",
     "ref": "Trang 8",
     "labels": [
       "A",
@@ -2826,7 +2826,7 @@ window.EXTRA_QUESTIONS = [
       "Tiến trình đã bị xóa"
     ],
     "correct": 1,
-    "why": "Ý chính: Tiến trình đang được CPU thực thi.; Ready chờ CPU; Running đang chạy; Blocked chờ sự kiện/I/O. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Tiến trình đang được CPU thực thi.; Ready chờ CPU; Running đang chạy; Blocked chờ sự kiện/I/O.",
     "ref": "Trang 8",
     "labels": [
       "A",
@@ -2847,7 +2847,7 @@ window.EXTRA_QUESTIONS = [
       "Tiến trình chờ I/O hoặc chờ một sự kiện"
     ],
     "correct": 3,
-    "why": "Ý chính: Tiến trình chờ I/O hoặc chờ một sự kiện.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Tiến trình chờ I/O hoặc chờ một sự kiện.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con.",
     "ref": "Trang 9",
     "labels": [
       "A",
@@ -2868,7 +2868,7 @@ window.EXTRA_QUESTIONS = [
       "Tắt màn hình"
     ],
     "correct": 2,
-    "why": "Context switch: lưu trạng thái tiến trình cũ, nạp trạng thái tiến trình mới.; PCB lưu thông tin cần thiết để tiếp tục thực thi. Chưa đối chiếu được với bài học scan.",
+    "why": "Context switch: lưu trạng thái tiến trình cũ, nạp trạng thái tiến trình mới.; PCB lưu thông tin cần thiết để tiếp tục thực thi.",
     "ref": "Trang 9",
     "labels": [
       "A",
@@ -2889,7 +2889,7 @@ window.EXTRA_QUESTIONS = [
       "Làm chương trình không cần bộ nhớ"
     ],
     "correct": 0,
-    "why": "Context switch lưu/phục hồi trạng thái tiến trình, tạo overhead.; Chuyển ngữ cảnh quá thường xuyên làm giảm thời gian CPU xử lý công việc hữu ích. Chưa đối chiếu được với bài học scan.",
+    "why": "Context switch lưu/phục hồi trạng thái tiến trình, tạo overhead.; Chuyển ngữ cảnh quá thường xuyên làm giảm thời gian CPU xử lý công việc hữu ích.",
     "ref": "Trang 9",
     "labels": [
       "A",
@@ -2910,7 +2910,7 @@ window.EXTRA_QUESTIONS = [
       "Đổi tên máy tính"
     ],
     "correct": 0,
-    "why": "Ý chính: Tạo một tiến trình con từ tiến trình hiện tại.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Tạo một tiến trình con từ tiến trình hiện tại.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con.",
     "ref": "Trang 9",
     "labels": [
       "A",
@@ -2931,7 +2931,7 @@ window.EXTRA_QUESTIONS = [
       "Cả hai đều bị xóa ngay"
     ],
     "correct": 1,
-    "why": "Ý chính: Cùng tiếp tục thực thi từ sau lời gọi fork(), nhưng có PID khác nhau.; Process = chương trình đang thực thi; PCB lưu PID, trạng thái, thanh ghi, bộ đếm lệnh. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Cùng tiếp tục thực thi từ sau lời gọi fork(), nhưng có PID khác nhau.; Process = chương trình đang thực thi; PCB lưu PID, trạng thái, thanh ghi, bộ đếm lệnh.",
     "ref": "Trang 9",
     "labels": [
       "A",
@@ -2952,7 +2952,7 @@ window.EXTRA_QUESTIONS = [
       "Tạo bản sao ổ cứng"
     ],
     "correct": 2,
-    "why": "exec() thay thế ảnh chương trình trong tiến trình hiện tại, không tạo PID mới.; fork() tạo tiến trình con; wait() chờ con kết thúc. Chưa đối chiếu được với bài học scan.",
+    "why": "exec() thay thế ảnh chương trình trong tiến trình hiện tại, không tạo PID mới.; fork() tạo tiến trình con; wait() chờ con kết thúc.",
     "ref": "Trang 10",
     "labels": [
       "A",
@@ -2973,7 +2973,7 @@ window.EXTRA_QUESTIONS = [
       "Tạo tập tin tạm"
     ],
     "correct": 2,
-    "why": "Ý chính: Chờ tiến trình con kết thúc và thu nhận trạng thái kết thúc.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Chờ tiến trình con kết thúc và thu nhận trạng thái kết thúc.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con.",
     "ref": "Trang 10",
     "labels": [
       "A",
@@ -2994,7 +2994,7 @@ window.EXTRA_QUESTIONS = [
       "Chưa từng được tạo"
     ],
     "correct": 1,
-    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu. Chưa đối chiếu được với bài học scan.",
+    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu.",
     "ref": "Trang 10",
     "labels": [
       "A",
@@ -3015,7 +3015,7 @@ window.EXTRA_QUESTIONS = [
       "Tiến trình không có mã chương trình"
     ],
     "correct": 2,
-    "why": "Orphan: tiến trình cha kết thúc khi con còn sống; hệ thống nhận nuôi con.; Zombie: con đã kết thúc nhưng cha chưa thu nhận trạng thái. Chưa đối chiếu được với bài học scan.",
+    "why": "Orphan: tiến trình cha kết thúc khi con còn sống; hệ thống nhận nuôi con.; Zombie: con đã kết thúc nhưng cha chưa thu nhận trạng thái.",
     "ref": "Trang 10",
     "labels": [
       "A",
@@ -3036,7 +3036,7 @@ window.EXTRA_QUESTIONS = [
       "Đơn vị thực thi nhẹ bên trong một tiến trình"
     ],
     "correct": 3,
-    "why": "Thread là đơn vị thực thi trong process; chia sẻ không gian địa chỉ.; Mỗi thread có stack, thanh ghi và bộ đếm chương trình riêng. Chưa đối chiếu được với bài học scan.",
+    "why": "Thread là đơn vị thực thi trong process; chia sẻ không gian địa chỉ.; Mỗi thread có stack, thanh ghi và bộ đếm chương trình riêng.",
     "ref": "Trang 10",
     "labels": [
       "A",
@@ -3057,7 +3057,7 @@ window.EXTRA_QUESTIONS = [
       "Không chia sẻ bất kỳ tài nguyên nào"
     ],
     "correct": 1,
-    "why": "Các luồng cùng process chia sẻ code, data, heap và tệp đang mở.; Mỗi luồng có stack, thanh ghi và program counter riêng. Chưa đối chiếu được với bài học scan.",
+    "why": "Các luồng cùng process chia sẻ code, data, heap và tệp đang mở.; Mỗi luồng có stack, thanh ghi và program counter riêng.",
     "ref": "Trang 11",
     "labels": [
       "A",
@@ -3078,7 +3078,7 @@ window.EXTRA_QUESTIONS = [
       "Không cần hệ điều hành quản lý"
     ],
     "correct": 1,
-    "why": "Đa luồng cải thiện responsiveness và khả năng tận dụng CPU đa lõi.; Các luồng chia sẻ dữ liệu nên vẫn cần đồng bộ. Chưa đối chiếu được với bài học scan.",
+    "why": "Đa luồng cải thiện responsiveness và khả năng tận dụng CPU đa lõi.; Các luồng chia sẻ dữ liệu nên vẫn cần đồng bộ.",
     "ref": "Trang 11",
     "labels": [
       "A",
@@ -3099,7 +3099,7 @@ window.EXTRA_QUESTIONS = [
       "Vì mọi luồng luôn chạy tuần tự tuyệt đối"
     ],
     "correct": 2,
-    "why": "Ý chính: Cần đồng bộ khi nhiều luồng truy cập dữ liệu dùng chung.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Cần đồng bộ khi nhiều luồng truy cập dữ liệu dùng chung.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con.",
     "ref": "Trang 11",
     "labels": [
       "A",
@@ -3120,7 +3120,7 @@ window.EXTRA_QUESTIONS = [
       "Một lệnh tắt máy"
     ],
     "correct": 0,
-    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu. Chưa đối chiếu được với bài học scan.",
+    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu.",
     "ref": "Trang 11",
     "labels": [
       "A",
@@ -3141,7 +3141,7 @@ window.EXTRA_QUESTIONS = [
       "Trao đổi dữ liệu nhanh vì các tiến trình cùng truy cập vùng nhớ chung"
     ],
     "correct": 3,
-    "why": "Shared memory: nhiều tiến trình cùng truy cập vùng nhớ, trao đổi nhanh.; Cần đồng bộ khi ghi/đọc đồng thời để tránh race condition. Chưa đối chiếu được với bài học scan.",
+    "why": "Shared memory: nhiều tiến trình cùng truy cập vùng nhớ, trao đổi nhanh.; Cần đồng bộ khi ghi/đọc đồng thời để tránh race condition.",
     "ref": "Trang 11",
     "labels": [
       "A",
@@ -3162,7 +3162,7 @@ window.EXTRA_QUESTIONS = [
       "Chọn thiết bị âm thanh mặc định"
     ],
     "correct": 2,
-    "why": "Ý chính: Chọn tiến trình trong hàng đợi sẵn sàng để cấp CPU thực thi.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Chọn tiến trình trong hàng đợi sẵn sàng để cấp CPU thực thi.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất.",
     "ref": "Trang 12",
     "labels": [
       "A",
@@ -3183,7 +3183,7 @@ window.EXTRA_QUESTIONS = [
       "Bộ nhớ ROM"
     ],
     "correct": 2,
-    "why": "Ý chính: Hàng đợi sẵn sàng.; RR chia thời gian theo quantum; quantum quá nhỏ tăng context switch. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Hàng đợi sẵn sàng.; RR chia thời gian theo quantum; quantum quá nhỏ tăng context switch.",
     "ref": "Trang 12",
     "labels": [
       "A",
@@ -3204,7 +3204,7 @@ window.EXTRA_QUESTIONS = [
       "Chuyển CPU cho tiến trình được chọn thực thi"
     ],
     "correct": 3,
-    "why": "Ý chính: Chuyển CPU cho tiến trình được chọn thực thi.; Waiting time: thời gian chờ ready; turnaround = hoàn thành − đến; response = chạy lần đầu − đến. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Chuyển CPU cho tiến trình được chọn thực thi.; Waiting time: thời gian chờ ready; turnaround = hoàn thành − đến; response = chạy lần đầu − đến.",
     "ref": "Trang 12",
     "labels": [
       "A",
@@ -3225,7 +3225,7 @@ window.EXTRA_QUESTIONS = [
       "Tổng thời gian tiến trình chờ trong hàng đợi sẵn sàng"
     ],
     "correct": 3,
-    "why": "Ý chính: Tổng thời gian tiến trình chờ trong hàng đợi sẵn sàng.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Tổng thời gian tiến trình chờ trong hàng đợi sẵn sàng.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất.",
     "ref": "Trang 12",
     "labels": [
       "A",
@@ -3246,7 +3246,7 @@ window.EXTRA_QUESTIONS = [
       "Burst time trừ thời điểm đến"
     ],
     "correct": 0,
-    "why": "Turnaround time = completion time − arrival time.; Waiting time = turnaround − tổng CPU burst (trong bài toán chỉ có CPU burst). Chưa đối chiếu được với bài học scan.",
+    "why": "Turnaround time = completion time − arrival time.; Waiting time = turnaround − tổng CPU burst (trong bài toán chỉ có CPU burst).",
     "ref": "Trang 13",
     "labels": [
       "A",
@@ -3267,7 +3267,7 @@ window.EXTRA_QUESTIONS = [
       "Thời gian cài đặt hệ điều hành"
     ],
     "correct": 2,
-    "why": "Response time = thời điểm được CPU lần đầu − thời điểm đến.; Turnaround = hoàn thành − đến; waiting = tổng thời gian chờ ready. Chưa đối chiếu được với bài học scan.",
+    "why": "Response time = thời điểm được CPU lần đầu − thời điểm đến.; Turnaround = hoàn thành − đến; waiting = tổng thời gian chờ ready.",
     "ref": "Trang 13",
     "labels": [
       "A",
@@ -3288,7 +3288,7 @@ window.EXTRA_QUESTIONS = [
       "Ưu tiên thấp nhất trước"
     ],
     "correct": 1,
-    "why": "Ý chính: Đến trước phục vụ trước.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Đến trước phục vụ trước.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất.",
     "ref": "Trang 13",
     "labels": [
       "A",
@@ -3309,7 +3309,7 @@ window.EXTRA_QUESTIONS = [
       "Không thể chạy tiến trình nào"
     ],
     "correct": 0,
-    "why": "FCFS có convoy effect: tiến trình ngắn chờ sau tiến trình dài.; FCFS không trưng dụng, đơn giản nhưng thời gian chờ có thể cao. Chưa đối chiếu được với bài học scan.",
+    "why": "FCFS có convoy effect: tiến trình ngắn chờ sau tiến trình dài.; FCFS không trưng dụng, đơn giản nhưng thời gian chờ có thể cao.",
     "ref": "Trang 13",
     "labels": [
       "A",
@@ -3330,7 +3330,7 @@ window.EXTRA_QUESTIONS = [
       "Tiến trình dùng nhiều bộ nhớ nhất"
     ],
     "correct": 1,
-    "why": "SJF không trưng dụng chọn tiến trình ready có CPU burst ngắn nhất.; SRTF là phiên bản có trưng dụng dựa vào thời gian còn lại. Chưa đối chiếu được với bài học scan.",
+    "why": "SJF không trưng dụng chọn tiến trình ready có CPU burst ngắn nhất.; SRTF là phiên bản có trưng dụng dựa vào thời gian còn lại.",
     "ref": "Trang 13",
     "labels": [
       "A",
@@ -3351,7 +3351,7 @@ window.EXTRA_QUESTIONS = [
       "Không trưng dụng, chọn tiến trình dài nhất"
     ],
     "correct": 2,
-    "why": "SRTF = Shortest Remaining Time First, phiên bản SJF có trưng dụng.; Tiến trình mới có thời gian còn lại ngắn hơn có thể giành CPU. Chưa đối chiếu được với bài học scan.",
+    "why": "SRTF = Shortest Remaining Time First, phiên bản SJF có trưng dụng.; Tiến trình mới có thời gian còn lại ngắn hơn có thể giành CPU.",
     "ref": "Trang 14",
     "labels": [
       "A",
@@ -3372,7 +3372,7 @@ window.EXTRA_QUESTIONS = [
       "Không có hàng đợi sẵn sàng"
     ],
     "correct": 0,
-    "why": "SJF/SRTF khó biết trước CPU burst; có thể dự đoán bằng exponential averaging.; SJF không trưng dụng; SRTF có trưng dụng và có thể gây starvation. Chưa đối chiếu được với bài học scan.",
+    "why": "SJF/SRTF khó biết trước CPU burst; có thể dự đoán bằng exponential averaging.; SJF không trưng dụng; SRTF có trưng dụng và có thể gây starvation.",
     "ref": "Trang 14",
     "labels": [
       "A",
@@ -3393,7 +3393,7 @@ window.EXTRA_QUESTIONS = [
       "Hệ không có tiến trình"
     ],
     "correct": 0,
-    "why": "Round Robin thích hợp hệ tương tác/time-sharing vì luân phiên cấp CPU.; Quantum ảnh hưởng độ đáp ứng và chi phí chuyển ngữ cảnh. Chưa đối chiếu được với bài học scan.",
+    "why": "Round Robin thích hợp hệ tương tác/time-sharing vì luân phiên cấp CPU.; Quantum ảnh hưởng độ đáp ứng và chi phí chuyển ngữ cảnh.",
     "ref": "Trang 14",
     "labels": [
       "A",
@@ -3414,7 +3414,7 @@ window.EXTRA_QUESTIONS = [
       "Kích thước màn hình"
     ],
     "correct": 1,
-    "why": "Time quantum: thời lượng CPU tối đa mỗi lượt trong Round Robin.; Quantum nhỏ: nhiều context switch; quá lớn: RR gần FCFS. Chưa đối chiếu được với bài học scan.",
+    "why": "Time quantum: thời lượng CPU tối đa mỗi lượt trong Round Robin.; Quantum nhỏ: nhiều context switch; quá lớn: RR gần FCFS.",
     "ref": "Trang 14",
     "labels": [
       "A",
@@ -3435,7 +3435,7 @@ window.EXTRA_QUESTIONS = [
       "CPU không cần định thời"
     ],
     "correct": 2,
-    "why": "Quantum quá nhỏ làm tăng context switch và overhead.; Quantum quá lớn làm RR gần FCFS. Chưa đối chiếu được với bài học scan.",
+    "why": "Quantum quá nhỏ làm tăng context switch và overhead.; Quantum quá lớn làm RR gần FCFS.",
     "ref": "Trang 14",
     "labels": [
       "A",
@@ -3456,7 +3456,7 @@ window.EXTRA_QUESTIONS = [
       "Kích thước biểu tượng"
     ],
     "correct": 1,
-    "why": "Ý chính: Mức ưu tiên của tiến trình.; Waiting time: thời gian chờ ready; turnaround = hoàn thành − đến; response = chạy lần đầu − đến. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Mức ưu tiên của tiến trình.; Waiting time: thời gian chờ ready; turnaround = hoàn thành − đến; response = chạy lần đầu − đến.",
     "ref": "Trang 15",
     "labels": [
       "A",
@@ -3477,7 +3477,7 @@ window.EXTRA_QUESTIONS = [
       "Một tiến trình chờ quá lâu vì liên tục không được chọn"
     ],
     "correct": 3,
-    "why": "Starvation là tiến trình chờ rất lâu vì liên tục không được chọn.; Aging tăng dần độ ưu tiên của tiến trình chờ lâu. Chưa đối chiếu được với bài học scan.",
+    "why": "Starvation là tiến trình chờ rất lâu vì liên tục không được chọn.; Aging tăng dần độ ưu tiên của tiến trình chờ lâu.",
     "ref": "Trang 15",
     "labels": [
       "A",
@@ -3498,7 +3498,7 @@ window.EXTRA_QUESTIONS = [
       "Xóa hàng đợi sẵn sàng"
     ],
     "correct": 0,
-    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu. Chưa đối chiếu được với bài học scan.",
+    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu.",
     "ref": "Trang 15",
     "labels": [
       "A",
@@ -3519,7 +3519,7 @@ window.EXTRA_QUESTIONS = [
       "Một loại bộ nhớ ngoài"
     ],
     "correct": 2,
-    "why": "MLFQ = Multilevel Feedback Queue: nhiều hàng đợi ưu tiên, cho phép thay đổi mức.; Ưu tiên được điều chỉnh theo hành vi sử dụng CPU/I/O. Chưa đối chiếu được với bài học scan.",
+    "why": "MLFQ = Multilevel Feedback Queue: nhiều hàng đợi ưu tiên, cho phép thay đổi mức.; Ưu tiên được điều chỉnh theo hành vi sử dụng CPU/I/O.",
     "ref": "Trang 15",
     "labels": [
       "A",
@@ -3540,7 +3540,7 @@ window.EXTRA_QUESTIONS = [
       "Không dùng hàng đợi"
     ],
     "correct": 0,
-    "why": "MLFQ điều chỉnh ưu tiên theo hành vi: dùng hết quantum thường hạ mức.; Tiến trình I/O-bound thường được ưu tiên đáp ứng nhanh; có thể tăng ưu tiên chống starvation. Chưa đối chiếu được với bài học scan.",
+    "why": "MLFQ điều chỉnh ưu tiên theo hành vi: dùng hết quantum thường hạ mức.; Tiến trình I/O-bound thường được ưu tiên đáp ứng nhanh; có thể tăng ưu tiên chống starvation.",
     "ref": "Trang 15",
     "labels": [
       "A",
@@ -3561,7 +3561,7 @@ window.EXTRA_QUESTIONS = [
       "Tắt một lõi CPU vĩnh viễn"
     ],
     "correct": 1,
-    "why": "Processor affinity: xu hướng chạy tiến trình/luồng trên cùng CPU/lõi.; Lợi ích: cache locality, giảm chi phí di chuyển giữa các lõi. Chưa đối chiếu được với bài học scan.",
+    "why": "Processor affinity: xu hướng chạy tiến trình/luồng trên cùng CPU/lõi.; Lợi ích: cache locality, giảm chi phí di chuyển giữa các lõi.",
     "ref": "Trang 16",
     "labels": [
       "A",
@@ -3582,7 +3582,7 @@ window.EXTRA_QUESTIONS = [
       "Làm mọi tiến trình kết thúc ngay"
     ],
     "correct": 0,
-    "why": "Processor affinity giữ tiến trình trên lõi quen thuộc để tận dụng cache.; Load balancing phân bố tải giữa các lõi, đôi khi cần di chuyển tiến trình. Chưa đối chiếu được với bài học scan.",
+    "why": "Processor affinity giữ tiến trình trên lõi quen thuộc để tận dụng cache.; Load balancing phân bố tải giữa các lõi, đôi khi cần di chuyển tiến trình.",
     "ref": "Trang 16",
     "labels": [
       "A",
@@ -3603,7 +3603,7 @@ window.EXTRA_QUESTIONS = [
       "Xóa hàng đợi sẵn sàng"
     ],
     "correct": 1,
-    "why": "Ý chính: Phân bố tải công việc tương đối đều giữa các lõi CPU.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Phân bố tải công việc tương đối đều giữa các lõi CPU.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất.",
     "ref": "Trang 16",
     "labels": [
       "A",
@@ -3624,7 +3624,7 @@ window.EXTRA_QUESTIONS = [
       "Phải đáp ứng đúng hạn chặt chẽ"
     ],
     "correct": 3,
-    "why": "Hard real-time: trễ deadline có thể là lỗi hệ thống nghiêm trọng.; Soft real-time: trễ deadline làm giảm chất lượng nhưng không nhất thiết thất bại. Chưa đối chiếu được với bài học scan.",
+    "why": "Hard real-time: trễ deadline có thể là lỗi hệ thống nghiêm trọng.; Soft real-time: trễ deadline làm giảm chất lượng nhưng không nhất thiết thất bại.",
     "ref": "Trang 16",
     "labels": [
       "A",
@@ -3645,7 +3645,7 @@ window.EXTRA_QUESTIONS = [
       "Công việc có thời hạn xa nhất"
     ],
     "correct": 0,
-    "why": "EDF = Earliest Deadline First: deadline gần nhất được ưu tiên.; Hard real-time yêu cầu đáp ứng hạn chót nghiêm ngặt. Chưa đối chiếu được với bài học scan.",
+    "why": "EDF = Earliest Deadline First: deadline gần nhất được ưu tiên.; Hard real-time yêu cầu đáp ứng hạn chót nghiêm ngặt.",
     "ref": "Trang 16",
     "labels": [
       "A",
@@ -3666,7 +3666,7 @@ window.EXTRA_QUESTIONS = [
       "FCFS luôn tốt nhất trong mọi trường hợp"
     ],
     "correct": 2,
-    "why": "Ý chính: Không có thuật toán tối ưu cho mọi mục tiêu và mọi hệ thống.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Không có thuật toán tối ưu cho mọi mục tiêu và mọi hệ thống.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất.",
     "ref": "Trang 17",
     "labels": [
       "A",
@@ -3687,7 +3687,7 @@ window.EXTRA_QUESTIONS = [
       "Khi chỉ có một tiến trình duy nhất và không có dữ liệu chia sẻ"
     ],
     "correct": 1,
-    "why": "Ý chính: Khi nhiều tiến trình/luồng cùng truy cập tài nguyên hoặc dữ liệu dùng chung.; Critical section: đoạn mã truy cập dữ liệu chung; race condition do thứ tự thực thi xen kẽ. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Khi nhiều tiến trình/luồng cùng truy cập tài nguyên hoặc dữ liệu dùng chung.; Critical section: đoạn mã truy cập dữ liệu chung; race condition do thứ tự thực thi xen kẽ.",
     "ref": "Trang 17",
     "labels": [
       "A",
@@ -3708,7 +3708,7 @@ window.EXTRA_QUESTIONS = [
       "Kết quả phụ thuộc vào thứ tự thực thi xen kẽ của các tiến trình/luồng"
     ],
     "correct": 3,
-    "why": "Ý chính: Kết quả phụ thuộc vào thứ tự thực thi xen kẽ của các tiến trình/luồng.; Ba yêu cầu: mutual exclusion, progress, bounded waiting. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Kết quả phụ thuộc vào thứ tự thực thi xen kẽ của các tiến trình/luồng.; Ba yêu cầu: mutual exclusion, progress, bounded waiting.",
     "ref": "Trang 17",
     "labels": [
       "A",
@@ -3729,7 +3729,7 @@ window.EXTRA_QUESTIONS = [
       "Dữ liệu sai lệch hoặc không nhất quán"
     ],
     "correct": 3,
-    "why": "Ý chính: Dữ liệu sai lệch hoặc không nhất quán.; Semaphore: wait()/signal(); mutex bảo vệ vùng tới hạn; busy waiting tiêu tốn CPU. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Dữ liệu sai lệch hoặc không nhất quán.; Semaphore: wait()/signal(); mutex bảo vệ vùng tới hạn; busy waiting tiêu tốn CPU.",
     "ref": "Trang 17",
     "labels": [
       "A",
@@ -3750,7 +3750,7 @@ window.EXTRA_QUESTIONS = [
       "Phần giao diện đăng nhập"
     ],
     "correct": 1,
-    "why": "Ý chính: Đoạn mã truy cập hoặc cập nhật dữ liệu/tài nguyên dùng chung.; Critical section: đoạn mã truy cập dữ liệu chung; race condition do thứ tự thực thi xen kẽ. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Đoạn mã truy cập hoặc cập nhật dữ liệu/tài nguyên dùng chung.; Critical section: đoạn mã truy cập dữ liệu chung; race condition do thứ tự thực thi xen kẽ.",
     "ref": "Trang 18",
     "labels": [
       "A",
@@ -3771,7 +3771,7 @@ window.EXTRA_QUESTIONS = [
       "Tất cả tiến trình phải cùng vào miền tương trục"
     ],
     "correct": 1,
-    "why": "Ý chính: Tại một thời điểm, chỉ một tiến trình được vào miền tương trục.; Ba yêu cầu: mutual exclusion, progress, bounded waiting. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Tại một thời điểm, chỉ một tiến trình được vào miền tương trục.; Ba yêu cầu: mutual exclusion, progress, bounded waiting.",
     "ref": "Trang 18",
     "labels": [
       "A",
@@ -3792,7 +3792,7 @@ window.EXTRA_QUESTIONS = [
       "Nếu miền tương trục đang rỗng và có tiến trình muốn vào, việc lựa chọn không bị trì hoãn vô hạn"
     ],
     "correct": 3,
-    "why": "Ý chính: Nếu miền tương trục đang rỗng và có tiến trình muốn vào, việc lựa chọn không bị trì hoãn vô hạn.; Semaphore: wait()/signal(); mutex bảo vệ vùng tới hạn; busy waiting tiêu tốn CPU. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Nếu miền tương trục đang rỗng và có tiến trình muốn vào, việc lựa chọn không bị trì hoãn vô hạn.; Semaphore: wait()/signal(); mutex bảo vệ vùng tới hạn; busy waiting tiêu tốn CPU.",
     "ref": "Trang 18",
     "labels": [
       "A",
@@ -3813,7 +3813,7 @@ window.EXTRA_QUESTIONS = [
       "Starvation"
     ],
     "correct": 3,
-    "why": "Bounded waiting: giới hạn số lần tiến trình khác vượt lên trước.; Giúp ngăn starvation; khác progress và mutual exclusion. Chưa đối chiếu được với bài học scan.",
+    "why": "Bounded waiting: giới hạn số lần tiến trình khác vượt lên trước.; Giúp ngăn starvation; khác progress và mutual exclusion.",
     "ref": "Trang 18",
     "labels": [
       "A",
@@ -3834,7 +3834,7 @@ window.EXTRA_QUESTIONS = [
       "Quản lý tập tin ảnh"
     ],
     "correct": 0,
-    "why": "Peterson: thuật toán phần mềm cổ điển cho hai tiến trình.; Dùng flag[] và turn; có busy waiting. Chưa đối chiếu được với bài học scan.",
+    "why": "Peterson: thuật toán phần mềm cổ điển cho hai tiến trình.; Dùng flag[] và turn; có busy waiting.",
     "ref": "Trang 18",
     "labels": [
       "A",
@@ -3855,7 +3855,7 @@ window.EXTRA_QUESTIONS = [
       "Tiến trình vào ngẫu nhiên không kiểm soát"
     ],
     "correct": 1,
-    "why": "Bakery Algorithm cấp số thứ tự (ticket) để quyết định lượt vào vùng tới hạn.; Nếu số bằng nhau, dùng PID để phân xử; là giải pháp phần mềm loại trừ tương hỗ. Chưa đối chiếu được với bài học scan.",
+    "why": "Bakery Algorithm cấp số thứ tự (ticket) để quyết định lượt vào vùng tới hạn.; Nếu số bằng nhau, dùng PID để phân xử; là giải pháp phần mềm loại trừ tương hỗ.",
     "ref": "Trang 19",
     "labels": [
       "A",
@@ -3876,7 +3876,7 @@ window.EXTRA_QUESTIONS = [
       "Không thể minh họa bằng thuật toán"
     ],
     "correct": 1,
-    "why": "Busy waiting = lặp kiểm tra liên tục, gây tốn CPU.; Peterson áp dụng kinh điển cho 2 tiến trình; spinlock sử dụng chờ bận. Chưa đối chiếu được với bài học scan.",
+    "why": "Busy waiting = lặp kiểm tra liên tục, gây tốn CPU.; Peterson áp dụng kinh điển cho 2 tiến trình; spinlock sử dụng chờ bận.",
     "ref": "Trang 19",
     "labels": [
       "A",
@@ -3897,7 +3897,7 @@ window.EXTRA_QUESTIONS = [
       "Tiến trình đã kết thúc"
     ],
     "correct": 1,
-    "why": "Ý chính: Tiến trình liên tục kiểm tra điều kiện trong khi chờ.; Ba yêu cầu: mutual exclusion, progress, bounded waiting. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Tiến trình liên tục kiểm tra điều kiện trong khi chờ.; Ba yêu cầu: mutual exclusion, progress, bounded waiting.",
     "ref": "Trang 19",
     "labels": [
       "A",
@@ -3918,7 +3918,7 @@ window.EXTRA_QUESTIONS = [
       "Tạm thời vô hiệu hóa ngắt để tránh bị gián đoạn trong đoạn mã cần bảo vệ"
     ],
     "correct": 3,
-    "why": "Disable interrupts tránh bị ngắt trên CPU đang chạy trong đoạn mã bảo vệ.; Không đủ bảo vệ giữa nhiều CPU và không nên tắt ngắt quá lâu. Chưa đối chiếu được với bài học scan.",
+    "why": "Disable interrupts tránh bị ngắt trên CPU đang chạy trong đoạn mã bảo vệ.; Không đủ bảo vệ giữa nhiều CPU và không nên tắt ngắt quá lâu.",
     "ref": "Trang 19",
     "labels": [
       "A",
@@ -3939,7 +3939,7 @@ window.EXTRA_QUESTIONS = [
       "Thao tác tắt màn hình"
     ],
     "correct": 2,
-    "why": "Test-and-Set là thao tác nguyên tử đọc giá trị cũ và đặt giá trị mới.; Dùng xây dựng spinlock; có thể gây busy waiting. Chưa đối chiếu được với bài học scan.",
+    "why": "Test-and-Set là thao tác nguyên tử đọc giá trị cũ và đặt giá trị mới.; Dùng xây dựng spinlock; có thể gây busy waiting.",
     "ref": "Trang 19",
     "labels": [
       "A",
@@ -3960,7 +3960,7 @@ window.EXTRA_QUESTIONS = [
       "Chuyển tiến trình sang trạng thái zombie"
     ],
     "correct": 1,
-    "why": "Compare-and-Swap (CAS): nếu giá trị hiện tại bằng kỳ vọng thì thay bằng giá trị mới.; CAS là thao tác nguyên tử, dùng trong đồng bộ không khóa hoặc xây dựng khóa. Chưa đối chiếu được với bài học scan.",
+    "why": "Compare-and-Swap (CAS): nếu giá trị hiện tại bằng kỳ vọng thì thay bằng giá trị mới.; CAS là thao tác nguyên tử, dùng trong đồng bộ không khóa hoặc xây dựng khóa.",
     "ref": "Trang 20",
     "labels": [
       "A",
@@ -3981,7 +3981,7 @@ window.EXTRA_QUESTIONS = [
       "Công cụ đồng bộ hóa dựa trên một biến nguyên và các thao tác nguyên tử"
     ],
     "correct": 3,
-    "why": "Semaphore là biến đếm được thao tác nguyên tử bằng wait() và signal().; Binary semaphore: 0/1; counting semaphore: quản lý nhiều đơn vị tài nguyên. Chưa đối chiếu được với bài học scan.",
+    "why": "Semaphore là biến đếm được thao tác nguyên tử bằng wait() và signal().; Binary semaphore: 0/1; counting semaphore: quản lý nhiều đơn vị tài nguyên.",
     "ref": "Trang 20",
     "labels": [
       "A",
@@ -4002,7 +4002,7 @@ window.EXTRA_QUESTIONS = [
       "open() và close()"
     ],
     "correct": 2,
-    "why": "Ý chính: wait() và signal().; Critical section: đoạn mã truy cập dữ liệu chung; race condition do thứ tự thực thi xen kẽ. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: wait() và signal().; Critical section: đoạn mã truy cập dữ liệu chung; race condition do thứ tự thực thi xen kẽ.",
     "ref": "Trang 20",
     "labels": [
       "A",
@@ -4023,7 +4023,7 @@ window.EXTRA_QUESTIONS = [
       "Luôn bằng 100"
     ],
     "correct": 1,
-    "why": "Binary semaphore có hai trạng thái logic 0 và 1.; Counting semaphore đếm nhiều tài nguyên; wait giảm, signal tăng theo ngữ nghĩa semaphore. Chưa đối chiếu được với bài học scan.",
+    "why": "Binary semaphore có hai trạng thái logic 0 và 1.; Counting semaphore đếm nhiều tài nguyên; wait giảm, signal tăng theo ngữ nghĩa semaphore.",
     "ref": "Trang 20",
     "labels": [
       "A",
@@ -4044,7 +4044,7 @@ window.EXTRA_QUESTIONS = [
       "Xóa tiến trình khỏi hàng đợi"
     ],
     "correct": 1,
-    "why": "Counting semaphore dùng để quản lý số lượng hữu hạn tài nguyên giống nhau.; Binary semaphore chỉ có 0/1; semaphore cần thao tác nguyên tử. Chưa đối chiếu được với bài học scan.",
+    "why": "Counting semaphore dùng để quản lý số lượng hữu hạn tài nguyên giống nhau.; Binary semaphore chỉ có 0/1; semaphore cần thao tác nguyên tử.",
     "ref": "Trang 20",
     "labels": [
       "A",
@@ -4065,7 +4065,7 @@ window.EXTRA_QUESTIONS = [
       "format() và delete()"
     ],
     "correct": 0,
-    "why": "Semaphore không chờ bận dùng block() để ngủ và wakeup() để đánh thức.; Khác spinlock: spinlock lặp kiểm tra khóa và tiêu thụ CPU. Chưa đối chiếu được với bài học scan.",
+    "why": "Semaphore không chờ bận dùng block() để ngủ và wakeup() để đánh thức.; Khác spinlock: spinlock lặp kiểm tra khóa và tiêu thụ CPU.",
     "ref": "Trang 21",
     "labels": [
       "A",
@@ -4086,7 +4086,7 @@ window.EXTRA_QUESTIONS = [
       "Hai hay nhiều tiến trình chờ nhau vô hạn nên không tiến trình nào tiếp tục được"
     ],
     "correct": 3,
-    "why": "Deadlock: nhóm tiến trình chờ nhau vô hạn, không thể tiếp tục.; Bốn điều kiện cần: mutual exclusion, hold-and-wait, no preemption, circular wait. Chưa đối chiếu được với bài học scan.",
+    "why": "Deadlock: nhóm tiến trình chờ nhau vô hạn, không thể tiếp tục.; Bốn điều kiện cần: mutual exclusion, hold-and-wait, no preemption, circular wait.",
     "ref": "Trang 21",
     "labels": [
       "A",
@@ -4107,7 +4107,7 @@ window.EXTRA_QUESTIONS = [
       "Starvation là một tiến trình có thể bị chờ rất lâu vì luôn bị bỏ qua, không nhất thiết tất cả đều kẹt"
     ],
     "correct": 3,
-    "why": "Starvation: tiến trình bị bỏ qua quá lâu; deadlock: các tiến trình chờ nhau không tiến triển.; Aging là một biện pháp giảm starvation. Chưa đối chiếu được với bài học scan.",
+    "why": "Starvation: tiến trình bị bỏ qua quá lâu; deadlock: các tiến trình chờ nhau không tiến triển.; Aging là một biện pháp giảm starvation.",
     "ref": "Trang 21",
     "labels": [
       "A",
@@ -4128,7 +4128,7 @@ window.EXTRA_QUESTIONS = [
       "Loại trừ khi truy cập vùng đệm và đếm số ô trống/ô đầy"
     ],
     "correct": 3,
-    "why": "Producer-Consumer: mutex bảo vệ buffer, empty đếm ô trống, full đếm ô đầy.; Producer chờ khi buffer đầy; consumer chờ khi buffer rỗng. Chưa đối chiếu được với bài học scan.",
+    "why": "Producer-Consumer: mutex bảo vệ buffer, empty đếm ô trống, full đếm ô đầy.; Producer chờ khi buffer đầy; consumer chờ khi buffer rỗng.",
     "ref": "Trang 21",
     "labels": [
       "A",
@@ -4149,7 +4149,7 @@ window.EXTRA_QUESTIONS = [
       "Nhiều reader có thể đọc đồng thời, nhưng writer cần quyền truy cập độc quyền"
     ],
     "correct": 3,
-    "why": "Readers-Writers: nhiều reader có thể cùng đọc, writer phải độc quyền.; Thiết kế ưu tiên reader/writer không hợp lý có thể gây starvation. Chưa đối chiếu được với bài học scan.",
+    "why": "Readers-Writers: nhiều reader có thể cùng đọc, writer phải độc quyền.; Thiết kế ưu tiên reader/writer không hợp lý có thể gây starvation.",
     "ref": "Trang 21",
     "labels": [
       "A",
@@ -4170,7 +4170,7 @@ window.EXTRA_QUESTIONS = [
       "Chỉ có một triết gia trong hệ thống"
     ],
     "correct": 2,
-    "why": "Dining Philosophers: mỗi người giữ một đũa và chờ đũa kia → circular wait.; Điều kiện deadlock: mutual exclusion, hold-and-wait, no preemption, circular wait. Chưa đối chiếu được với bài học scan.",
+    "why": "Dining Philosophers: mỗi người giữ một đũa và chờ đũa kia → circular wait.; Điều kiện deadlock: mutual exclusion, hold-and-wait, no preemption, circular wait.",
     "ref": "Trang 22",
     "labels": [
       "A",
@@ -4191,7 +4191,7 @@ window.EXTRA_QUESTIONS = [
       "Monitor chỉ dùng để hiển thị hình ảnh"
     ],
     "correct": 2,
-    "why": "Monitor đóng gói dữ liệu chia sẻ, thủ tục và cơ chế đồng bộ.; Condition variable thường dùng wait()/signal() trong monitor. Chưa đối chiếu được với bài học scan.",
+    "why": "Monitor đóng gói dữ liệu chia sẻ, thủ tục và cơ chế đồng bộ.; Condition variable thường dùng wait()/signal() trong monitor.",
     "ref": "Trang 22",
     "labels": [
       "A",
@@ -4212,7 +4212,7 @@ window.EXTRA_QUESTIONS = [
       "Đang chờ bàn phím"
     ],
     "correct": 2,
-    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu. Chưa đối chiếu được với bài học scan.",
+    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu.",
     "ref": "Câu hỏi 1",
     "labels": [
       "a",
@@ -4233,7 +4233,7 @@ window.EXTRA_QUESTIONS = [
       "Cơ chế giao tiếp giữa các tiến trình"
     ],
     "correct": 3,
-    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu. Chưa đối chiếu được với bài học scan.",
+    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu.",
     "ref": "Câu hỏi 2",
     "labels": [
       "a",
@@ -4254,7 +4254,7 @@ window.EXTRA_QUESTIONS = [
       "Các phím tắt của trình duyệt"
     ],
     "correct": 1,
-    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu. Chưa đối chiếu được với bài học scan.",
+    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu.",
     "ref": "Câu hỏi 3",
     "labels": [
       "a",
@@ -4275,7 +4275,7 @@ window.EXTRA_QUESTIONS = [
       "Tự động tăng RAM vật lý"
     ],
     "correct": 1,
-    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu. Chưa đối chiếu được với bài học scan.",
+    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu.",
     "ref": "Câu hỏi 4",
     "labels": [
       "a",
@@ -4296,7 +4296,7 @@ window.EXTRA_QUESTIONS = [
       "Chỉ cho phép chạy trò chơi"
     ],
     "correct": 1,
-    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu. Chưa đối chiếu được với bài học scan.",
+    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu.",
     "ref": "Câu hỏi 5",
     "labels": [
       "a",
@@ -4317,7 +4317,7 @@ window.EXTRA_QUESTIONS = [
       "Thay đổi màu bàn phím"
     ],
     "correct": 0,
-    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu. Chưa đối chiếu được với bài học scan.",
+    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu.",
     "ref": "Câu hỏi 6",
     "labels": [
       "a",
@@ -4338,7 +4338,7 @@ window.EXTRA_QUESTIONS = [
       "Tăng kích thước màn hình"
     ],
     "correct": 1,
-    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu. Chưa đối chiếu được với bài học scan.",
+    "why": "Đáp án xuất hiện trong hai PDF đề cùng mã câu.",
     "ref": "Câu hỏi 7",
     "labels": [
       "a",
@@ -4359,7 +4359,7 @@ window.EXTRA_QUESTIONS = [
       "Quản lý tài nguyên phần cứng và cung cấp môi trường thực thi cho chương trình"
     ],
     "correct": 3,
-    "why": "Ý chính: Quản lý tài nguyên phần cứng và cung cấp môi trường thực thi cho chương trình.; OS quản lý CPU, bộ nhớ, I/O, tệp và cung cấp môi trường chạy chương trình. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Quản lý tài nguyên phần cứng và cung cấp môi trường thực thi cho chương trình.; OS quản lý CPU, bộ nhớ, I/O, tệp và cung cấp môi trường chạy chương trình.",
     "ref": "Câu hỏi 8",
     "labels": [
       "a",
@@ -4380,7 +4380,7 @@ window.EXTRA_QUESTIONS = [
       "Một định dạng tập tin ảnh"
     ],
     "correct": 0,
-    "why": "Semaphore là biến đếm được thao tác nguyên tử bằng wait() và signal().; Binary semaphore: 0/1; counting semaphore: quản lý nhiều đơn vị tài nguyên. Chưa đối chiếu được với bài học scan.",
+    "why": "Semaphore là biến đếm được thao tác nguyên tử bằng wait() và signal().; Binary semaphore: 0/1; counting semaphore: quản lý nhiều đơn vị tài nguyên.",
     "ref": "Câu hỏi 9",
     "labels": [
       "a",
@@ -4401,7 +4401,7 @@ window.EXTRA_QUESTIONS = [
       "Luôn loại bỏ mọi lỗi lập trình"
     ],
     "correct": 0,
-    "why": "Busy waiting = lặp kiểm tra liên tục, gây tốn CPU.; Peterson áp dụng kinh điển cho 2 tiến trình; spinlock sử dụng chờ bận. Chưa đối chiếu được với bài học scan.",
+    "why": "Busy waiting = lặp kiểm tra liên tục, gây tốn CPU.; Peterson áp dụng kinh điển cho 2 tiến trình; spinlock sử dụng chờ bận.",
     "ref": "Câu hỏi 10",
     "labels": [
       "a",
@@ -4422,7 +4422,7 @@ window.EXTRA_QUESTIONS = [
       "Không có hàng đợi sẵn sàng"
     ],
     "correct": 0,
-    "why": "SJF/SRTF khó biết trước CPU burst; có thể dự đoán bằng exponential averaging.; SJF không trưng dụng; SRTF có trưng dụng và có thể gây starvation. Chưa đối chiếu được với bài học scan.",
+    "why": "SJF/SRTF khó biết trước CPU burst; có thể dự đoán bằng exponential averaging.; SJF không trưng dụng; SRTF có trưng dụng và có thể gây starvation.",
     "ref": "Câu hỏi 11",
     "labels": [
       "a",
@@ -4464,7 +4464,7 @@ window.EXTRA_QUESTIONS = [
       "Loại bỏ cơ chế truyền thông"
     ],
     "correct": 1,
-    "why": "Microkernel giữ nhân nhỏ, dịch vụ chuyển ra user space.; Ưu: dễ bảo trì/cô lập lỗi; nhược: tăng chi phí IPC. Chưa đối chiếu được với bài học scan.",
+    "why": "Microkernel giữ nhân nhỏ, dịch vụ chuyển ra user space.; Ưu: dễ bảo trì/cô lập lỗi; nhược: tăng chi phí IPC.",
     "ref": "Câu hỏi 13",
     "labels": [
       "a",
@@ -4485,7 +4485,7 @@ window.EXTRA_QUESTIONS = [
       "Tắt CPU"
     ],
     "correct": 2,
-    "why": "exec() thay thế ảnh chương trình trong tiến trình hiện tại, không tạo PID mới.; fork() tạo tiến trình con; wait() chờ con kết thúc. Chưa đối chiếu được với bài học scan.",
+    "why": "exec() thay thế ảnh chương trình trong tiến trình hiện tại, không tạo PID mới.; fork() tạo tiến trình con; wait() chờ con kết thúc.",
     "ref": "Câu hỏi 14",
     "labels": [
       "a",
@@ -4506,7 +4506,7 @@ window.EXTRA_QUESTIONS = [
       "Tăng overhead và làm giảm hiệu năng hệ thống"
     ],
     "correct": 3,
-    "why": "Context switch lưu/phục hồi trạng thái tiến trình, tạo overhead.; Chuyển ngữ cảnh quá thường xuyên làm giảm thời gian CPU xử lý công việc hữu ích. Chưa đối chiếu được với bài học scan.",
+    "why": "Context switch lưu/phục hồi trạng thái tiến trình, tạo overhead.; Chuyển ngữ cảnh quá thường xuyên làm giảm thời gian CPU xử lý công việc hữu ích.",
     "ref": "Câu hỏi 15",
     "labels": [
       "a",
@@ -4527,7 +4527,7 @@ window.EXTRA_QUESTIONS = [
       "Có trưng dụng, chọn tiến trình có thời gian còn lại ngắn nhất"
     ],
     "correct": 3,
-    "why": "SRTF = Shortest Remaining Time First, phiên bản SJF có trưng dụng.; Tiến trình mới có thời gian còn lại ngắn hơn có thể giành CPU. Chưa đối chiếu được với bài học scan.",
+    "why": "SRTF = Shortest Remaining Time First, phiên bản SJF có trưng dụng.; Tiến trình mới có thời gian còn lại ngắn hơn có thể giành CPU.",
     "ref": "Câu hỏi 16",
     "labels": [
       "a",
@@ -4548,7 +4548,7 @@ window.EXTRA_QUESTIONS = [
       "Đổi màu giao diện hệ điều hành"
     ],
     "correct": 2,
-    "why": "Context switch: lưu trạng thái tiến trình cũ, nạp trạng thái tiến trình mới.; PCB lưu thông tin cần thiết để tiếp tục thực thi. Chưa đối chiếu được với bài học scan.",
+    "why": "Context switch: lưu trạng thái tiến trình cũ, nạp trạng thái tiến trình mới.; PCB lưu thông tin cần thiết để tiếp tục thực thi.",
     "ref": "Câu hỏi 17",
     "labels": [
       "a",
@@ -4569,7 +4569,7 @@ window.EXTRA_QUESTIONS = [
       "API luôn là phần cứng"
     ],
     "correct": 1,
-    "why": "API cung cấp hàm tiện dụng; không phải mọi lời gọi API đều sinh system call.; System call chuyển vào kernel để yêu cầu dịch vụ được bảo vệ. Chưa đối chiếu được với bài học scan.",
+    "why": "API cung cấp hàm tiện dụng; không phải mọi lời gọi API đều sinh system call.; System call chuyển vào kernel để yêu cầu dịch vụ được bảo vệ.",
     "ref": "Câu hỏi 18",
     "labels": [
       "a",
@@ -4590,7 +4590,7 @@ window.EXTRA_QUESTIONS = [
       "Chỉ tăng tốc độ mạng"
     ],
     "correct": 1,
-    "why": "Ý chính: Cấp phát, thu hồi, bảo vệ và tổ chức bộ nhớ cho các tiến trình.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Cấp phát, thu hồi, bảo vệ và tổ chức bộ nhớ cho các tiến trình.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành.",
     "ref": "Câu hỏi 19",
     "labels": [
       "a",
@@ -4611,7 +4611,7 @@ window.EXTRA_QUESTIONS = [
       "Luôn cần một CPU vật lý riêng"
     ],
     "correct": 2,
-    "why": "Container thường chia sẻ kernel máy chủ; VM có hệ điều hành khách riêng.; Container nhẹ/khởi động nhanh; VM cô lập ở mức máy ảo. Chưa đối chiếu được với bài học scan.",
+    "why": "Container thường chia sẻ kernel máy chủ; VM có hệ điều hành khách riêng.; Container nhẹ/khởi động nhanh; VM cô lập ở mức máy ảo.",
     "ref": "Câu hỏi 20",
     "labels": [
       "a",
@@ -4632,7 +4632,7 @@ window.EXTRA_QUESTIONS = [
       "Tăng tốc CPU"
     ],
     "correct": 2,
-    "why": "Bounded waiting: giới hạn số lần tiến trình khác vượt lên trước.; Giúp ngăn starvation; khác progress và mutual exclusion. Chưa đối chiếu được với bài học scan.",
+    "why": "Bounded waiting: giới hạn số lần tiến trình khác vượt lên trước.; Giúp ngăn starvation; khác progress và mutual exclusion.",
     "ref": "Câu hỏi 21",
     "labels": [
       "a",
@@ -4653,7 +4653,7 @@ window.EXTRA_QUESTIONS = [
       "Kích thước màn hình"
     ],
     "correct": 2,
-    "why": "Time quantum: thời lượng CPU tối đa mỗi lượt trong Round Robin.; Quantum nhỏ: nhiều context switch; quá lớn: RR gần FCFS. Chưa đối chiếu được với bài học scan.",
+    "why": "Time quantum: thời lượng CPU tối đa mỗi lượt trong Round Robin.; Quantum nhỏ: nhiều context switch; quá lớn: RR gần FCFS.",
     "ref": "Câu hỏi 22",
     "labels": [
       "a",
@@ -4674,7 +4674,7 @@ window.EXTRA_QUESTIONS = [
       "0 hoặc 1"
     ],
     "correct": 3,
-    "why": "Binary semaphore có hai trạng thái logic 0 và 1.; Counting semaphore đếm nhiều tài nguyên; wait giảm, signal tăng theo ngữ nghĩa semaphore. Chưa đối chiếu được với bài học scan.",
+    "why": "Binary semaphore có hai trạng thái logic 0 và 1.; Counting semaphore đếm nhiều tài nguyên; wait giảm, signal tăng theo ngữ nghĩa semaphore.",
     "ref": "Câu hỏi 23",
     "labels": [
       "a",
@@ -4695,7 +4695,7 @@ window.EXTRA_QUESTIONS = [
       "Hiệu năng, an toàn, dễ mở rộng và dễ bảo trì"
     ],
     "correct": 3,
-    "why": "Ý chính: Hiệu năng, an toàn, dễ mở rộng và dễ bảo trì.; Monolithic: nhiều dịch vụ trong kernel; microkernel: chuyển nhiều dịch vụ sang user space. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Hiệu năng, an toàn, dễ mở rộng và dễ bảo trì.; Monolithic: nhiều dịch vụ trong kernel; microkernel: chuyển nhiều dịch vụ sang user space.",
     "ref": "Câu hỏi 24",
     "labels": [
       "a",
@@ -4716,7 +4716,7 @@ window.EXTRA_QUESTIONS = [
       "Starvation chỉ xảy ra khi không có tiến trình"
     ],
     "correct": 2,
-    "why": "Starvation: tiến trình bị bỏ qua quá lâu; deadlock: các tiến trình chờ nhau không tiến triển.; Aging là một biện pháp giảm starvation. Chưa đối chiếu được với bài học scan.",
+    "why": "Starvation: tiến trình bị bỏ qua quá lâu; deadlock: các tiến trình chờ nhau không tiến triển.; Aging là một biện pháp giảm starvation.",
     "ref": "Câu hỏi 25",
     "labels": [
       "a",
@@ -4737,7 +4737,7 @@ window.EXTRA_QUESTIONS = [
       "Người dùng nhập lệnh dạng văn bản để yêu cầu hệ thống thực hiện công việc"
     ],
     "correct": 3,
-    "why": "Ý chính: Người dùng nhập lệnh dạng văn bản để yêu cầu hệ thống thực hiện công việc.; Monolithic: nhiều dịch vụ trong kernel; microkernel: chuyển nhiều dịch vụ sang user space. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Người dùng nhập lệnh dạng văn bản để yêu cầu hệ thống thực hiện công việc.; Monolithic: nhiều dịch vụ trong kernel; microkernel: chuyển nhiều dịch vụ sang user space.",
     "ref": "Câu hỏi 26",
     "labels": [
       "a",
@@ -4758,7 +4758,7 @@ window.EXTRA_QUESTIONS = [
       "Xóa một tiến trình khỏi ổ đĩa"
     ],
     "correct": 0,
-    "why": "Ý chính: Chuyển CPU cho tiến trình được chọn thực thi.; Waiting time: thời gian chờ ready; turnaround = hoàn thành − đến; response = chạy lần đầu − đến. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Chuyển CPU cho tiến trình được chọn thực thi.; Waiting time: thời gian chờ ready; turnaround = hoàn thành − đến; response = chạy lần đầu − đến.",
     "ref": "Câu hỏi 27",
     "labels": [
       "a",
@@ -4779,7 +4779,7 @@ window.EXTRA_QUESTIONS = [
       "Tiến trình không tồn tại"
     ],
     "correct": 2,
-    "why": "Ý chính: Tiến trình chờ I/O hoặc chờ một sự kiện.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Tiến trình chờ I/O hoặc chờ một sự kiện.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con.",
     "ref": "Câu hỏi 28",
     "labels": [
       "a",
@@ -4800,7 +4800,7 @@ window.EXTRA_QUESTIONS = [
       "Trình soạn thảo văn bản"
     ],
     "correct": 2,
-    "why": "Ý chính: Kernel.; OS quản lý CPU, bộ nhớ, I/O, tệp và cung cấp môi trường chạy chương trình. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Kernel.; OS quản lý CPU, bộ nhớ, I/O, tệp và cung cấp môi trường chạy chương trình.",
     "ref": "Câu hỏi 29",
     "labels": [
       "a",
@@ -4821,7 +4821,7 @@ window.EXTRA_QUESTIONS = [
       "Cho phép chạy nhiều môi trường hệ điều hành độc lập trên cùng phần cứng"
     ],
     "correct": 3,
-    "why": "Ý chính: Cho phép chạy nhiều môi trường hệ điều hành độc lập trên cùng phần cứng.; OS quản lý CPU, bộ nhớ, I/O, tệp và cung cấp môi trường chạy chương trình. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Cho phép chạy nhiều môi trường hệ điều hành độc lập trên cùng phần cứng.; OS quản lý CPU, bộ nhớ, I/O, tệp và cung cấp môi trường chạy chương trình.",
     "ref": "Câu hỏi 30",
     "labels": [
       "a",
@@ -4842,7 +4842,7 @@ window.EXTRA_QUESTIONS = [
       "Định thời dùng nhiều hàng đợi phản hồi với mức ưu tiên khác nhau"
     ],
     "correct": 3,
-    "why": "MLFQ = Multilevel Feedback Queue: nhiều hàng đợi ưu tiên, cho phép thay đổi mức.; Ưu tiên được điều chỉnh theo hành vi sử dụng CPU/I/O. Chưa đối chiếu được với bài học scan.",
+    "why": "MLFQ = Multilevel Feedback Queue: nhiều hàng đợi ưu tiên, cho phép thay đổi mức.; Ưu tiên được điều chỉnh theo hành vi sử dụng CPU/I/O.",
     "ref": "Câu hỏi 31",
     "labels": [
       "a",
@@ -4863,7 +4863,7 @@ window.EXTRA_QUESTIONS = [
       "Công việc có thời hạn xa nhất"
     ],
     "correct": 1,
-    "why": "EDF = Earliest Deadline First: deadline gần nhất được ưu tiên.; Hard real-time yêu cầu đáp ứng hạn chót nghiêm ngặt. Chưa đối chiếu được với bài học scan.",
+    "why": "EDF = Earliest Deadline First: deadline gần nhất được ưu tiên.; Hard real-time yêu cầu đáp ứng hạn chót nghiêm ngặt.",
     "ref": "Câu hỏi 32",
     "labels": [
       "a",
@@ -4884,7 +4884,7 @@ window.EXTRA_QUESTIONS = [
       "Luôn cần biết burst time tương lai"
     ],
     "correct": 0,
-    "why": "FCFS có convoy effect: tiến trình ngắn chờ sau tiến trình dài.; FCFS không trưng dụng, đơn giản nhưng thời gian chờ có thể cao. Chưa đối chiếu được với bài học scan.",
+    "why": "FCFS có convoy effect: tiến trình ngắn chờ sau tiến trình dài.; FCFS không trưng dụng, đơn giản nhưng thời gian chờ có thể cao.",
     "ref": "Câu hỏi 33",
     "labels": [
       "a",
@@ -4905,7 +4905,7 @@ window.EXTRA_QUESTIONS = [
       "Tạm thời vô hiệu hóa ngắt để tránh bị gián đoạn trong đoạn mã cần bảo vệ"
     ],
     "correct": 3,
-    "why": "Disable interrupts tránh bị ngắt trên CPU đang chạy trong đoạn mã bảo vệ.; Không đủ bảo vệ giữa nhiều CPU và không nên tắt ngắt quá lâu. Chưa đối chiếu được với bài học scan.",
+    "why": "Disable interrupts tránh bị ngắt trên CPU đang chạy trong đoạn mã bảo vệ.; Không đủ bảo vệ giữa nhiều CPU và không nên tắt ngắt quá lâu.",
     "ref": "Câu hỏi 34",
     "labels": [
       "a",
@@ -4947,7 +4947,7 @@ window.EXTRA_QUESTIONS = [
       "Không có khác biệt nào"
     ],
     "correct": 0,
-    "why": "Ý chính: Chương trình là mã tĩnh, tiến trình là chương trình đang thực thi.; Ready chờ CPU; Running đang chạy; Blocked chờ sự kiện/I/O. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Chương trình là mã tĩnh, tiến trình là chương trình đang thực thi.; Ready chờ CPU; Running đang chạy; Blocked chờ sự kiện/I/O.",
     "ref": "Câu hỏi 36",
     "labels": [
       "a",
@@ -4968,7 +4968,7 @@ window.EXTRA_QUESTIONS = [
       "Thao tác tắt màn hình"
     ],
     "correct": 1,
-    "why": "Test-and-Set là thao tác nguyên tử đọc giá trị cũ và đặt giá trị mới.; Dùng xây dựng spinlock; có thể gây busy waiting. Chưa đối chiếu được với bài học scan.",
+    "why": "Test-and-Set là thao tác nguyên tử đọc giá trị cũ và đặt giá trị mới.; Dùng xây dựng spinlock; có thể gây busy waiting.",
     "ref": "Câu hỏi 37",
     "labels": [
       "a",
@@ -4989,7 +4989,7 @@ window.EXTRA_QUESTIONS = [
       "Không cần deadline"
     ],
     "correct": 2,
-    "why": "Hard real-time: trễ deadline có thể là lỗi hệ thống nghiêm trọng.; Soft real-time: trễ deadline làm giảm chất lượng nhưng không nhất thiết thất bại. Chưa đối chiếu được với bài học scan.",
+    "why": "Hard real-time: trễ deadline có thể là lỗi hệ thống nghiêm trọng.; Soft real-time: trễ deadline làm giảm chất lượng nhưng không nhất thiết thất bại.",
     "ref": "Câu hỏi 38",
     "labels": [
       "a",
@@ -5010,7 +5010,7 @@ window.EXTRA_QUESTIONS = [
       "Tất cả đũa đều dư thừa vô hạn"
     ],
     "correct": 0,
-    "why": "Dining Philosophers: mỗi người giữ một đũa và chờ đũa kia → circular wait.; Điều kiện deadlock: mutual exclusion, hold-and-wait, no preemption, circular wait. Chưa đối chiếu được với bài học scan.",
+    "why": "Dining Philosophers: mỗi người giữ một đũa và chờ đũa kia → circular wait.; Điều kiện deadlock: mutual exclusion, hold-and-wait, no preemption, circular wait.",
     "ref": "Câu hỏi 39",
     "labels": [
       "a",
@@ -5031,7 +5031,7 @@ window.EXTRA_QUESTIONS = [
       "Tiến trình đã bị xóa"
     ],
     "correct": 1,
-    "why": "Ý chính: Tiến trình đang được CPU thực thi.; Ready chờ CPU; Running đang chạy; Blocked chờ sự kiện/I/O. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Tiến trình đang được CPU thực thi.; Ready chờ CPU; Running đang chạy; Blocked chờ sự kiện/I/O.",
     "ref": "Câu hỏi 40",
     "labels": [
       "a",
@@ -5052,7 +5052,7 @@ window.EXTRA_QUESTIONS = [
       "Sử dụng tài nguyên hiệu quả và tạo môi trường thuận tiện cho người dùng"
     ],
     "correct": 3,
-    "why": "Ý chính: Sử dụng tài nguyên hiệu quả và tạo môi trường thuận tiện cho người dùng.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Sử dụng tài nguyên hiệu quả và tạo môi trường thuận tiện cho người dùng.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành.",
     "ref": "Câu hỏi 41",
     "labels": [
       "a",
@@ -5073,7 +5073,7 @@ window.EXTRA_QUESTIONS = [
       "Tại một thời điểm, chỉ một tiến trình được vào miền tương trục"
     ],
     "correct": 3,
-    "why": "Ý chính: Tại một thời điểm, chỉ một tiến trình được vào miền tương trục.; Ba yêu cầu: mutual exclusion, progress, bounded waiting. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Tại một thời điểm, chỉ một tiến trình được vào miền tương trục.; Ba yêu cầu: mutual exclusion, progress, bounded waiting.",
     "ref": "Câu hỏi 42",
     "labels": [
       "a",
@@ -5094,7 +5094,7 @@ window.EXTRA_QUESTIONS = [
       "Không cần bộ nhớ"
     ],
     "correct": 1,
-    "why": "Ý chính: Dễ mở rộng, dễ bảo trì và tăng tính cô lập lỗi.; API là giao diện lập trình thuận tiện; system call yêu cầu dịch vụ từ kernel. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Dễ mở rộng, dễ bảo trì và tăng tính cô lập lỗi.; API là giao diện lập trình thuận tiện; system call yêu cầu dịch vụ từ kernel.",
     "ref": "Câu hỏi 43",
     "labels": [
       "a",
@@ -5115,7 +5115,7 @@ window.EXTRA_QUESTIONS = [
       "Chọn màu sắc giao diện hệ thống"
     ],
     "correct": 1,
-    "why": "Ý chính: Chọn tiến trình trong hàng đợi sẵn sàng để cấp CPU thực thi.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Chọn tiến trình trong hàng đợi sẵn sàng để cấp CPU thực thi.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất.",
     "ref": "Câu hỏi 44",
     "labels": [
       "a",
@@ -5136,7 +5136,7 @@ window.EXTRA_QUESTIONS = [
       "Khi không có CPU"
     ],
     "correct": 0,
-    "why": "Ý chính: Khi nhiều tiến trình/luồng cùng truy cập tài nguyên hoặc dữ liệu dùng chung.; Critical section: đoạn mã truy cập dữ liệu chung; race condition do thứ tự thực thi xen kẽ. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Khi nhiều tiến trình/luồng cùng truy cập tài nguyên hoặc dữ liệu dùng chung.; Critical section: đoạn mã truy cập dữ liệu chung; race condition do thứ tự thực thi xen kẽ.",
     "ref": "Câu hỏi 45",
     "labels": [
       "a",
@@ -5157,7 +5157,7 @@ window.EXTRA_QUESTIONS = [
       "Tiến trình đã kết thúc hoàn toàn"
     ],
     "correct": 2,
-    "why": "Ý chính: Tiến trình đã sẵn sàng chạy và đang chờ CPU.; Process = chương trình đang thực thi; PCB lưu PID, trạng thái, thanh ghi, bộ đếm lệnh. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Tiến trình đã sẵn sàng chạy và đang chờ CPU.; Process = chương trình đang thực thi; PCB lưu PID, trạng thái, thanh ghi, bộ đếm lệnh.",
     "ref": "Câu hỏi 46",
     "labels": [
       "a",
@@ -5178,7 +5178,7 @@ window.EXTRA_QUESTIONS = [
       "Tiến trình có tên dài nhất vào trước"
     ],
     "correct": 0,
-    "why": "Bakery Algorithm cấp số thứ tự (ticket) để quyết định lượt vào vùng tới hạn.; Nếu số bằng nhau, dùng PID để phân xử; là giải pháp phần mềm loại trừ tương hỗ. Chưa đối chiếu được với bài học scan.",
+    "why": "Bakery Algorithm cấp số thứ tự (ticket) để quyết định lượt vào vùng tới hạn.; Nếu số bằng nhau, dùng PID để phân xử; là giải pháp phần mềm loại trừ tương hỗ.",
     "ref": "Câu hỏi 47",
     "labels": [
       "a",
@@ -5199,7 +5199,7 @@ window.EXTRA_QUESTIONS = [
       "Để làm cho mọi chương trình chạy chậm hơn"
     ],
     "correct": 1,
-    "why": "Ý chính: Để bảo vệ hệ thống, ngăn chương trình người dùng truy cập trực tiếp tài nguyên nhạy cảm.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Để bảo vệ hệ thống, ngăn chương trình người dùng truy cập trực tiếp tài nguyên nhạy cảm.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành.",
     "ref": "Câu hỏi 48",
     "labels": [
       "a",
@@ -5220,7 +5220,7 @@ window.EXTRA_QUESTIONS = [
       "Quản lý tập tin ảnh"
     ],
     "correct": 2,
-    "why": "Peterson: thuật toán phần mềm cổ điển cho hai tiến trình.; Dùng flag[] và turn; có busy waiting. Chưa đối chiếu được với bài học scan.",
+    "why": "Peterson: thuật toán phần mềm cổ điển cho hai tiến trình.; Dùng flag[] và turn; có busy waiting.",
     "ref": "Câu hỏi 49",
     "labels": [
       "a",
@@ -5241,7 +5241,7 @@ window.EXTRA_QUESTIONS = [
       "Tạo tập tin tạm"
     ],
     "correct": 1,
-    "why": "Ý chính: Chờ tiến trình con kết thúc và thu nhận trạng thái kết thúc.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Chờ tiến trình con kết thúc và thu nhận trạng thái kết thúc.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con.",
     "ref": "Câu hỏi 50",
     "labels": [
       "a",
@@ -5262,7 +5262,7 @@ window.EXTRA_QUESTIONS = [
       "Thay đổi độ phân giải màn hình"
     ],
     "correct": 2,
-    "why": "Ý chính: Tạo một tiến trình con từ tiến trình hiện tại.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Tạo một tiến trình con từ tiến trình hiện tại.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con.",
     "ref": "Câu hỏi 51",
     "labels": [
       "a",
@@ -5283,7 +5283,7 @@ window.EXTRA_QUESTIONS = [
       "Dữ liệu sai lệch hoặc không nhất quán"
     ],
     "correct": 3,
-    "why": "Ý chính: Dữ liệu sai lệch hoặc không nhất quán.; Semaphore: wait()/signal(); mutex bảo vệ vùng tới hạn; busy waiting tiêu tốn CPU. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Dữ liệu sai lệch hoặc không nhất quán.; Semaphore: wait()/signal(); mutex bảo vệ vùng tới hạn; busy waiting tiêu tốn CPU.",
     "ref": "Câu hỏi 52",
     "labels": [
       "a",
@@ -5304,7 +5304,7 @@ window.EXTRA_QUESTIONS = [
       "Lưu danh sách phím tắt trình duyệt"
     ],
     "correct": 2,
-    "why": "Ý chính: Lưu thông tin quản lý tiến trình như trạng thái, thanh ghi, bộ đếm chương trình.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Lưu thông tin quản lý tiến trình như trạng thái, thanh ghi, bộ đếm chương trình.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con.",
     "ref": "Câu hỏi 53",
     "labels": [
       "a",
@@ -5325,7 +5325,7 @@ window.EXTRA_QUESTIONS = [
       "Chỉ dùng được cho một tiến trình"
     ],
     "correct": 1,
-    "why": "Shared memory: nhiều tiến trình cùng truy cập vùng nhớ, trao đổi nhanh.; Cần đồng bộ khi ghi/đọc đồng thời để tránh race condition. Chưa đối chiếu được với bài học scan.",
+    "why": "Shared memory: nhiều tiến trình cùng truy cập vùng nhớ, trao đổi nhanh.; Cần đồng bộ khi ghi/đọc đồng thời để tránh race condition.",
     "ref": "Câu hỏi 54",
     "labels": [
       "a",
@@ -5346,7 +5346,7 @@ window.EXTRA_QUESTIONS = [
       "Chỉ cho phép một chương trình chạy duy nhất"
     ],
     "correct": 2,
-    "why": "Ý chính: Cho phép nhiều tiến trình/chương trình cùng được quản lý và chia sẻ CPU.; Kernel là phần lõi; user mode bị giới hạn, kernel mode thực thi lệnh đặc quyền. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Cho phép nhiều tiến trình/chương trình cùng được quản lý và chia sẻ CPU.; Kernel là phần lõi; user mode bị giới hạn, kernel mode thực thi lệnh đặc quyền.",
     "ref": "Câu hỏi 55",
     "labels": [
       "a",
@@ -5367,7 +5367,7 @@ window.EXTRA_QUESTIONS = [
       "zoom() và rotate()"
     ],
     "correct": 0,
-    "why": "Semaphore không chờ bận dùng block() để ngủ và wakeup() để đánh thức.; Khác spinlock: spinlock lặp kiểm tra khóa và tiêu thụ CPU. Chưa đối chiếu được với bài học scan.",
+    "why": "Semaphore không chờ bận dùng block() để ngủ và wakeup() để đánh thức.; Khác spinlock: spinlock lặp kiểm tra khóa và tiêu thụ CPU.",
     "ref": "Câu hỏi 56",
     "labels": [
       "a",
@@ -5388,7 +5388,7 @@ window.EXTRA_QUESTIONS = [
       "Tạo, xóa, đọc, ghi và tổ chức tập tin/thư mục"
     ],
     "correct": 3,
-    "why": "Ý chính: Tạo, xóa, đọc, ghi và tổ chức tập tin/thư mục.; OS quản lý CPU, bộ nhớ, I/O, tệp và cung cấp môi trường chạy chương trình. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Tạo, xóa, đọc, ghi và tổ chức tập tin/thư mục.; OS quản lý CPU, bộ nhớ, I/O, tệp và cung cấp môi trường chạy chương trình.",
     "ref": "Câu hỏi 57",
     "labels": [
       "a",
@@ -5409,7 +5409,7 @@ window.EXTRA_QUESTIONS = [
       "Tiến trình ngủ và không chiếm CPU"
     ],
     "correct": 0,
-    "why": "Ý chính: Tiến trình liên tục kiểm tra điều kiện trong khi chờ.; Ba yêu cầu: mutual exclusion, progress, bounded waiting. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Tiến trình liên tục kiểm tra điều kiện trong khi chờ.; Ba yêu cầu: mutual exclusion, progress, bounded waiting.",
     "ref": "Câu hỏi 58",
     "labels": [
       "a",
@@ -5430,7 +5430,7 @@ window.EXTRA_QUESTIONS = [
       "Tên tiến trình theo thứ tự chữ cái"
     ],
     "correct": 1,
-    "why": "Ý chính: Mức ưu tiên của tiến trình.; Waiting time: thời gian chờ ready; turnaround = hoàn thành − đến; response = chạy lần đầu − đến. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Mức ưu tiên của tiến trình.; Waiting time: thời gian chờ ready; turnaround = hoàn thành − đến; response = chạy lần đầu − đến.",
     "ref": "Câu hỏi 59",
     "labels": [
       "a",
@@ -5451,7 +5451,7 @@ window.EXTRA_QUESTIONS = [
       "SJF không cần biết burst time"
     ],
     "correct": 2,
-    "why": "Ý chính: Không có thuật toán tối ưu cho mọi mục tiêu và mọi hệ thống.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Không có thuật toán tối ưu cho mọi mục tiêu và mọi hệ thống.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất.",
     "ref": "Câu hỏi 60",
     "labels": [
       "a",
@@ -5472,7 +5472,7 @@ window.EXTRA_QUESTIONS = [
       "Thời gian hệ thống khởi động BIOS"
     ],
     "correct": 2,
-    "why": "Ý chính: Tổng thời gian tiến trình chờ trong hàng đợi sẵn sàng.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Tổng thời gian tiến trình chờ trong hàng đợi sẵn sàng.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất.",
     "ref": "Câu hỏi 61",
     "labels": [
       "a",
@@ -5493,7 +5493,7 @@ window.EXTRA_QUESTIONS = [
       "Vì mọi ứng dụng đều chạy ở chế độ nhân"
     ],
     "correct": 2,
-    "why": "Ý chính: Vì cần hệ điều hành kiểm soát an toàn và chia sẻ tài nguyên.; API là giao diện lập trình thuận tiện; system call yêu cầu dịch vụ từ kernel. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Vì cần hệ điều hành kiểm soát an toàn và chia sẻ tài nguyên.; API là giao diện lập trình thuận tiện; system call yêu cầu dịch vụ từ kernel.",
     "ref": "Câu hỏi 62",
     "labels": [
       "a",
@@ -5514,7 +5514,7 @@ window.EXTRA_QUESTIONS = [
       "So sánh hai hình nền"
     ],
     "correct": 1,
-    "why": "Compare-and-Swap (CAS): nếu giá trị hiện tại bằng kỳ vọng thì thay bằng giá trị mới.; CAS là thao tác nguyên tử, dùng trong đồng bộ không khóa hoặc xây dựng khóa. Chưa đối chiếu được với bài học scan.",
+    "why": "Compare-and-Swap (CAS): nếu giá trị hiện tại bằng kỳ vọng thì thay bằng giá trị mới.; CAS là thao tác nguyên tử, dùng trong đồng bộ không khóa hoặc xây dựng khóa.",
     "ref": "Câu hỏi 63",
     "labels": [
       "a",
@@ -5535,7 +5535,7 @@ window.EXTRA_QUESTIONS = [
       "Tiến trình luôn phải chạy theo FIFO"
     ],
     "correct": 0,
-    "why": "Ý chính: Nếu miền tương trục đang rỗng và có tiến trình muốn vào, việc lựa chọn không bị trì hoãn vô hạn.; Semaphore: wait()/signal(); mutex bảo vệ vùng tới hạn; busy waiting tiêu tốn CPU. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Nếu miền tương trục đang rỗng và có tiến trình muốn vào, việc lựa chọn không bị trì hoãn vô hạn.; Semaphore: wait()/signal(); mutex bảo vệ vùng tới hạn; busy waiting tiêu tốn CPU.",
     "ref": "Câu hỏi 64",
     "labels": [
       "a",
@@ -5556,7 +5556,7 @@ window.EXTRA_QUESTIONS = [
       "open() và close()"
     ],
     "correct": 1,
-    "why": "Ý chính: wait() và signal().; Critical section: đoạn mã truy cập dữ liệu chung; race condition do thứ tự thực thi xen kẽ. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: wait() và signal().; Critical section: đoạn mã truy cập dữ liệu chung; race condition do thứ tự thực thi xen kẽ.",
     "ref": "Câu hỏi 65",
     "labels": [
       "a",
@@ -5577,7 +5577,7 @@ window.EXTRA_QUESTIONS = [
       "Một chương trình đang được thực thi"
     ],
     "correct": 3,
-    "why": "Ý chính: Một chương trình đang được thực thi.; Process = chương trình đang thực thi; PCB lưu PID, trạng thái, thanh ghi, bộ đếm lệnh. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Một chương trình đang được thực thi.; Process = chương trình đang thực thi; PCB lưu PID, trạng thái, thanh ghi, bộ đếm lệnh.",
     "ref": "Câu hỏi 66",
     "labels": [
       "a",
@@ -5598,7 +5598,7 @@ window.EXTRA_QUESTIONS = [
       "Monitor không hỗ trợ loại trừ hỗ tương"
     ],
     "correct": 2,
-    "why": "Monitor đóng gói dữ liệu chia sẻ, thủ tục và cơ chế đồng bộ.; Condition variable thường dùng wait()/signal() trong monitor. Chưa đối chiếu được với bài học scan.",
+    "why": "Monitor đóng gói dữ liệu chia sẻ, thủ tục và cơ chế đồng bộ.; Condition variable thường dùng wait()/signal() trong monitor.",
     "ref": "Câu hỏi 67",
     "labels": [
       "a",
@@ -5619,7 +5619,7 @@ window.EXTRA_QUESTIONS = [
       "Không hỗ trợ bộ nhớ"
     ],
     "correct": 1,
-    "why": "Ý chính: Chi phí truyền thông giữa các thành phần có thể cao hơn.; Monolithic: nhiều dịch vụ trong kernel; microkernel: chuyển nhiều dịch vụ sang user space. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Chi phí truyền thông giữa các thành phần có thể cao hơn.; Monolithic: nhiều dịch vụ trong kernel; microkernel: chuyển nhiều dịch vụ sang user space.",
     "ref": "Câu hỏi 68",
     "labels": [
       "a",
@@ -5640,7 +5640,7 @@ window.EXTRA_QUESTIONS = [
       "Hệ không có CPU"
     ],
     "correct": 1,
-    "why": "Round Robin thích hợp hệ tương tác/time-sharing vì luân phiên cấp CPU.; Quantum ảnh hưởng độ đáp ứng và chi phí chuyển ngữ cảnh. Chưa đối chiếu được với bài học scan.",
+    "why": "Round Robin thích hợp hệ tương tác/time-sharing vì luân phiên cấp CPU.; Quantum ảnh hưởng độ đáp ứng và chi phí chuyển ngữ cảnh.",
     "ref": "Câu hỏi 69",
     "labels": [
       "a",
@@ -5661,7 +5661,7 @@ window.EXTRA_QUESTIONS = [
       "Chỉ tạo tài khoản người dùng"
     ],
     "correct": 2,
-    "why": "Ý chính: Giúp hệ điều hành giao tiếp và điều khiển thiết bị phần cứng.; API là giao diện lập trình thuận tiện; system call yêu cầu dịch vụ từ kernel. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Giúp hệ điều hành giao tiếp và điều khiển thiết bị phần cứng.; API là giao diện lập trình thuận tiện; system call yêu cầu dịch vụ từ kernel.",
     "ref": "Câu hỏi 70",
     "labels": [
       "a",
@@ -5682,7 +5682,7 @@ window.EXTRA_QUESTIONS = [
       "Chỉ tiến trình con được tiếp tục"
     ],
     "correct": 0,
-    "why": "Ý chính: Cùng tiếp tục thực thi từ sau lời gọi fork(), nhưng có PID khác nhau.; Process = chương trình đang thực thi; PCB lưu PID, trạng thái, thanh ghi, bộ đếm lệnh. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Cùng tiếp tục thực thi từ sau lời gọi fork(), nhưng có PID khác nhau.; Process = chương trình đang thực thi; PCB lưu PID, trạng thái, thanh ghi, bộ đếm lệnh.",
     "ref": "Câu hỏi 71",
     "labels": [
       "a",
@@ -5703,7 +5703,7 @@ window.EXTRA_QUESTIONS = [
       "Đáp ứng đúng thời hạn"
     ],
     "correct": 3,
-    "why": "Ý chính: Đáp ứng đúng thời hạn.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Đáp ứng đúng thời hạn.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành.",
     "ref": "Câu hỏi 72",
     "labels": [
       "a",
@@ -5724,7 +5724,7 @@ window.EXTRA_QUESTIONS = [
       "Thời điểm hoàn thành trừ thời điểm đến"
     ],
     "correct": 3,
-    "why": "Turnaround time = completion time − arrival time.; Waiting time = turnaround − tổng CPU burst (trong bài toán chỉ có CPU burst). Chưa đối chiếu được với bài học scan.",
+    "why": "Turnaround time = completion time − arrival time.; Waiting time = turnaround − tổng CPU burst (trong bài toán chỉ có CPU burst).",
     "ref": "Câu hỏi 73",
     "labels": [
       "a",
@@ -5745,7 +5745,7 @@ window.EXTRA_QUESTIONS = [
       "Không cần quantum"
     ],
     "correct": 1,
-    "why": "MLFQ điều chỉnh ưu tiên theo hành vi: dùng hết quantum thường hạ mức.; Tiến trình I/O-bound thường được ưu tiên đáp ứng nhanh; có thể tăng ưu tiên chống starvation. Chưa đối chiếu được với bài học scan.",
+    "why": "MLFQ điều chỉnh ưu tiên theo hành vi: dùng hết quantum thường hạ mức.; Tiến trình I/O-bound thường được ưu tiên đáp ứng nhanh; có thể tăng ưu tiên chống starvation.",
     "ref": "Câu hỏi 74",
     "labels": [
       "a",
@@ -5766,7 +5766,7 @@ window.EXTRA_QUESTIONS = [
       "Quản lý nhiều tài nguyên giống nhau có số lượng hữu hạn"
     ],
     "correct": 3,
-    "why": "Counting semaphore dùng để quản lý số lượng hữu hạn tài nguyên giống nhau.; Binary semaphore chỉ có 0/1; semaphore cần thao tác nguyên tử. Chưa đối chiếu được với bài học scan.",
+    "why": "Counting semaphore dùng để quản lý số lượng hữu hạn tài nguyên giống nhau.; Binary semaphore chỉ có 0/1; semaphore cần thao tác nguyên tử.",
     "ref": "Câu hỏi 75",
     "labels": [
       "a",
@@ -5787,7 +5787,7 @@ window.EXTRA_QUESTIONS = [
       "Đoạn mã truy cập hoặc cập nhật dữ liệu/tài nguyên dùng chung"
     ],
     "correct": 3,
-    "why": "Ý chính: Đoạn mã truy cập hoặc cập nhật dữ liệu/tài nguyên dùng chung.; Critical section: đoạn mã truy cập dữ liệu chung; race condition do thứ tự thực thi xen kẽ. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Đoạn mã truy cập hoặc cập nhật dữ liệu/tài nguyên dùng chung.; Critical section: đoạn mã truy cập dữ liệu chung; race condition do thứ tự thực thi xen kẽ.",
     "ref": "Câu hỏi 76",
     "labels": [
       "a",
@@ -5808,7 +5808,7 @@ window.EXTRA_QUESTIONS = [
       "Ngẫu nhiên tuyệt đối"
     ],
     "correct": 1,
-    "why": "Ý chính: Đến trước phục vụ trước.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Đến trước phục vụ trước.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất.",
     "ref": "Câu hỏi 77",
     "labels": [
       "a",
@@ -5829,7 +5829,7 @@ window.EXTRA_QUESTIONS = [
       "Phân bố tải công việc tương đối đều giữa các lõi CPU"
     ],
     "correct": 3,
-    "why": "Ý chính: Phân bố tải công việc tương đối đều giữa các lõi CPU.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Phân bố tải công việc tương đối đều giữa các lõi CPU.; FCFS: đến trước chạy trước; SJF: CPU burst ngắn nhất; SRTF: thời gian còn lại ngắn nhất.",
     "ref": "Câu hỏi 78",
     "labels": [
       "a",
@@ -5850,7 +5850,7 @@ window.EXTRA_QUESTIONS = [
       "Loại trừ khi truy cập vùng đệm và đếm số ô trống/ô đầy"
     ],
     "correct": 3,
-    "why": "Producer-Consumer: mutex bảo vệ buffer, empty đếm ô trống, full đếm ô đầy.; Producer chờ khi buffer đầy; consumer chờ khi buffer rỗng. Chưa đối chiếu được với bài học scan.",
+    "why": "Producer-Consumer: mutex bảo vệ buffer, empty đếm ô trống, full đếm ô đầy.; Producer chờ khi buffer đầy; consumer chờ khi buffer rỗng.",
     "ref": "Câu hỏi 79",
     "labels": [
       "a",
@@ -5871,7 +5871,7 @@ window.EXTRA_QUESTIONS = [
       "Loại bỏ hoàn toàn cần định thời"
     ],
     "correct": 0,
-    "why": "Processor affinity giữ tiến trình trên lõi quen thuộc để tận dụng cache.; Load balancing phân bố tải giữa các lõi, đôi khi cần di chuyển tiến trình. Chưa đối chiếu được với bài học scan.",
+    "why": "Processor affinity giữ tiến trình trên lõi quen thuộc để tận dụng cache.; Load balancing phân bố tải giữa các lõi, đôi khi cần di chuyển tiến trình.",
     "ref": "Câu hỏi 80",
     "labels": [
       "a",
@@ -5892,7 +5892,7 @@ window.EXTRA_QUESTIONS = [
       "Cho phép chương trình người dùng yêu cầu dịch vụ từ hệ điều hành"
     ],
     "correct": 3,
-    "why": "Ý chính: Cho phép chương trình người dùng yêu cầu dịch vụ từ hệ điều hành.; Kernel là phần lõi; user mode bị giới hạn, kernel mode thực thi lệnh đặc quyền. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Cho phép chương trình người dùng yêu cầu dịch vụ từ hệ điều hành.; Kernel là phần lõi; user mode bị giới hạn, kernel mode thực thi lệnh đặc quyền.",
     "ref": "Câu hỏi 81",
     "labels": [
       "a",
@@ -5913,7 +5913,7 @@ window.EXTRA_QUESTIONS = [
       "Một thư mục hệ thống"
     ],
     "correct": 1,
-    "why": "Thread là đơn vị thực thi trong process; chia sẻ không gian địa chỉ.; Mỗi thread có stack, thanh ghi và bộ đếm chương trình riêng. Chưa đối chiếu được với bài học scan.",
+    "why": "Thread là đơn vị thực thi trong process; chia sẻ không gian địa chỉ.; Mỗi thread có stack, thanh ghi và bộ đếm chương trình riêng.",
     "ref": "Câu hỏi 82",
     "labels": [
       "a",
@@ -5934,7 +5934,7 @@ window.EXTRA_QUESTIONS = [
       "Tiến trình không có PID"
     ],
     "correct": 2,
-    "why": "Orphan: tiến trình cha kết thúc khi con còn sống; hệ thống nhận nuôi con.; Zombie: con đã kết thúc nhưng cha chưa thu nhận trạng thái. Chưa đối chiếu được với bài học scan.",
+    "why": "Orphan: tiến trình cha kết thúc khi con còn sống; hệ thống nhận nuôi con.; Zombie: con đã kết thúc nhưng cha chưa thu nhận trạng thái.",
     "ref": "Câu hỏi 83",
     "labels": [
       "a",
@@ -5955,7 +5955,7 @@ window.EXTRA_QUESTIONS = [
       "Chỉ hỗ trợ một tập tin duy nhất"
     ],
     "correct": 1,
-    "why": "Monolithic kernel: nhiều dịch vụ chạy ở kernel mode, thường giảm chi phí gọi qua lại.; Microkernel: kernel nhỏ, nhiều dịch vụ ở user mode, tăng cô lập lỗi. Chưa đối chiếu được với bài học scan.",
+    "why": "Monolithic kernel: nhiều dịch vụ chạy ở kernel mode, thường giảm chi phí gọi qua lại.; Microkernel: kernel nhỏ, nhiều dịch vụ ở user mode, tăng cô lập lỗi.",
     "ref": "Câu hỏi 84",
     "labels": [
       "a",
@@ -5976,7 +5976,7 @@ window.EXTRA_QUESTIONS = [
       "Họp trực tuyến"
     ],
     "correct": 2,
-    "why": "Ý chính: Xử lý các công việc theo lô, ít tương tác trực tiếp với người dùng.; Kernel là phần lõi; user mode bị giới hạn, kernel mode thực thi lệnh đặc quyền. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Xử lý các công việc theo lô, ít tương tác trực tiếp với người dùng.; Kernel là phần lõi; user mode bị giới hạn, kernel mode thực thi lệnh đặc quyền.",
     "ref": "Câu hỏi 85",
     "labels": [
       "a",
@@ -5997,7 +5997,7 @@ window.EXTRA_QUESTIONS = [
       "Vì không thể chia sẻ bộ nhớ"
     ],
     "correct": 1,
-    "why": "Ý chính: Cần đồng bộ khi nhiều luồng truy cập dữ liệu dùng chung.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Cần đồng bộ khi nhiều luồng truy cập dữ liệu dùng chung.; fork() tạo con; exec() thay chương trình; wait() thu nhận trạng thái con.",
     "ref": "Câu hỏi 86",
     "labels": [
       "a",
@@ -6018,7 +6018,7 @@ window.EXTRA_QUESTIONS = [
       "Một thuật toán định thời theo ưu tiên"
     ],
     "correct": 1,
-    "why": "Ý chính: Kết quả phụ thuộc vào thứ tự thực thi xen kẽ của các tiến trình/luồng.; Ba yêu cầu: mutual exclusion, progress, bounded waiting. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Kết quả phụ thuộc vào thứ tự thực thi xen kẽ của các tiến trình/luồng.; Ba yêu cầu: mutual exclusion, progress, bounded waiting.",
     "ref": "Câu hỏi 87",
     "labels": [
       "a",
@@ -6039,7 +6039,7 @@ window.EXTRA_QUESTIONS = [
       "CPU không cần định thời"
     ],
     "correct": 1,
-    "why": "Quantum quá nhỏ làm tăng context switch và overhead.; Quantum quá lớn làm RR gần FCFS. Chưa đối chiếu được với bài học scan.",
+    "why": "Quantum quá nhỏ làm tăng context switch và overhead.; Quantum quá lớn làm RR gần FCFS.",
     "ref": "Câu hỏi 88",
     "labels": [
       "a",
@@ -6060,7 +6060,7 @@ window.EXTRA_QUESTIONS = [
       "Tắt một lõi CPU vĩnh viễn"
     ],
     "correct": 0,
-    "why": "Processor affinity: xu hướng chạy tiến trình/luồng trên cùng CPU/lõi.; Lợi ích: cache locality, giảm chi phí di chuyển giữa các lõi. Chưa đối chiếu được với bài học scan.",
+    "why": "Processor affinity: xu hướng chạy tiến trình/luồng trên cùng CPU/lõi.; Lợi ích: cache locality, giảm chi phí di chuyển giữa các lõi.",
     "ref": "Câu hỏi 89",
     "labels": [
       "a",
@@ -6081,7 +6081,7 @@ window.EXTRA_QUESTIONS = [
       "Nhiều writer luôn ghi đồng thời không cần khóa"
     ],
     "correct": 2,
-    "why": "Readers-Writers: nhiều reader có thể cùng đọc, writer phải độc quyền.; Thiết kế ưu tiên reader/writer không hợp lý có thể gây starvation. Chưa đối chiếu được với bài học scan.",
+    "why": "Readers-Writers: nhiều reader có thể cùng đọc, writer phải độc quyền.; Thiết kế ưu tiên reader/writer không hợp lý có thể gây starvation.",
     "ref": "Câu hỏi 90",
     "labels": [
       "a",
@@ -6102,7 +6102,7 @@ window.EXTRA_QUESTIONS = [
       "Không liên quan đến trình điều khiển thiết bị"
     ],
     "correct": 0,
-    "why": "Ý chính: Cho phép nạp/gỡ một số chức năng kernel linh hoạt khi cần.; OS services gồm thực thi chương trình, I/O, quản lý tệp, truyền thông, bảo vệ. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Cho phép nạp/gỡ một số chức năng kernel linh hoạt khi cần.; OS services gồm thực thi chương trình, I/O, quản lý tệp, truyền thông, bảo vệ.",
     "ref": "Câu hỏi 91",
     "labels": [
       "a",
@@ -6123,7 +6123,7 @@ window.EXTRA_QUESTIONS = [
       "Không cần hệ điều hành quản lý"
     ],
     "correct": 1,
-    "why": "Đa luồng cải thiện responsiveness và khả năng tận dụng CPU đa lõi.; Các luồng chia sẻ dữ liệu nên vẫn cần đồng bộ. Chưa đối chiếu được với bài học scan.",
+    "why": "Đa luồng cải thiện responsiveness và khả năng tận dụng CPU đa lõi.; Các luồng chia sẻ dữ liệu nên vẫn cần đồng bộ.",
     "ref": "Câu hỏi 92",
     "labels": [
       "a",
@@ -6144,7 +6144,7 @@ window.EXTRA_QUESTIONS = [
       "CPU bị thiếu điện"
     ],
     "correct": 2,
-    "why": "Starvation là tiến trình chờ rất lâu vì liên tục không được chọn.; Aging tăng dần độ ưu tiên của tiến trình chờ lâu. Chưa đối chiếu được với bài học scan.",
+    "why": "Starvation là tiến trình chờ rất lâu vì liên tục không được chọn.; Aging tăng dần độ ưu tiên của tiến trình chờ lâu.",
     "ref": "Câu hỏi 93",
     "labels": [
       "a",
@@ -6165,7 +6165,7 @@ window.EXTRA_QUESTIONS = [
       "Danh bạ người dùng"
     ],
     "correct": 0,
-    "why": "Ý chính: Hàng đợi sẵn sàng.; RR chia thời gian theo quantum; quantum quá nhỏ tăng context switch. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Hàng đợi sẵn sàng.; RR chia thời gian theo quantum; quantum quá nhỏ tăng context switch.",
     "ref": "Câu hỏi 94",
     "labels": [
       "a",
@@ -6186,7 +6186,7 @@ window.EXTRA_QUESTIONS = [
       "Tiến trình dùng nhiều bộ nhớ nhất"
     ],
     "correct": 2,
-    "why": "SJF không trưng dụng chọn tiến trình ready có CPU burst ngắn nhất.; SRTF là phiên bản có trưng dụng dựa vào thời gian còn lại. Chưa đối chiếu được với bài học scan.",
+    "why": "SJF không trưng dụng chọn tiến trình ready có CPU burst ngắn nhất.; SRTF là phiên bản có trưng dụng dựa vào thời gian còn lại.",
     "ref": "Câu hỏi 95",
     "labels": [
       "a",
@@ -6207,7 +6207,7 @@ window.EXTRA_QUESTIONS = [
       "Bộ nhớ tự động mở rộng"
     ],
     "correct": 2,
-    "why": "Deadlock: nhóm tiến trình chờ nhau vô hạn, không thể tiếp tục.; Bốn điều kiện cần: mutual exclusion, hold-and-wait, no preemption, circular wait. Chưa đối chiếu được với bài học scan.",
+    "why": "Deadlock: nhóm tiến trình chờ nhau vô hạn, không thể tiếp tục.; Bốn điều kiện cần: mutual exclusion, hold-and-wait, no preemption, circular wait.",
     "ref": "Câu hỏi 96",
     "labels": [
       "a",
@@ -6228,7 +6228,7 @@ window.EXTRA_QUESTIONS = [
       "Mở, đọc, ghi, đóng và xóa tập tin"
     ],
     "correct": 3,
-    "why": "Ý chính: Mở, đọc, ghi, đóng và xóa tập tin.; Monolithic: nhiều dịch vụ trong kernel; microkernel: chuyển nhiều dịch vụ sang user space. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Mở, đọc, ghi, đóng và xóa tập tin.; Monolithic: nhiều dịch vụ trong kernel; microkernel: chuyển nhiều dịch vụ sang user space.",
     "ref": "Câu hỏi 97",
     "labels": [
       "a",
@@ -6249,7 +6249,7 @@ window.EXTRA_QUESTIONS = [
       "Mỗi luồng luôn có kernel riêng"
     ],
     "correct": 0,
-    "why": "Các luồng cùng process chia sẻ code, data, heap và tệp đang mở.; Mỗi luồng có stack, thanh ghi và program counter riêng. Chưa đối chiếu được với bài học scan.",
+    "why": "Các luồng cùng process chia sẻ code, data, heap và tệp đang mở.; Mỗi luồng có stack, thanh ghi và program counter riêng.",
     "ref": "Câu hỏi 98",
     "labels": [
       "a",
@@ -6270,7 +6270,7 @@ window.EXTRA_QUESTIONS = [
       "Tắt màn hình"
     ],
     "correct": 0,
-    "why": "Ý chính: System call.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: System call.; System call là cách ứng dụng yêu cầu dịch vụ của hệ điều hành.",
     "ref": "Câu hỏi 99",
     "labels": [
       "a",
@@ -6291,7 +6291,7 @@ window.EXTRA_QUESTIONS = [
       "Chỉ chỉnh sửa ảnh"
     ],
     "correct": 0,
-    "why": "Ý chính: Thực thi chương trình, thao tác tập tin, vào/ra và truyền thông.; API là giao diện lập trình thuận tiện; system call yêu cầu dịch vụ từ kernel. Chưa đối chiếu được với bài học scan.",
+    "why": "Ý chính: Thực thi chương trình, thao tác tập tin, vào/ra và truyền thông.; API là giao diện lập trình thuận tiện; system call yêu cầu dịch vụ từ kernel.",
     "ref": "Câu hỏi 100",
     "labels": [
       "a",
@@ -6301,3 +6301,4 @@ window.EXTRA_QUESTIONS = [
     ]
   }
 ];
+
